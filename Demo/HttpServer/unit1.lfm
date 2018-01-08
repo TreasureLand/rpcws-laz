@@ -1,0 +1,15 @@
+object FPWebModule1: TFPWebModule1
+  OldCreateOrder = False
+  Actions = <  
+    item
+      Name = 'FPWebActionRequest'
+      Default = True
+      OnRequest = FPWebActionRequestRequest
+      Template.AllowTagParams = False
+    end>
+  CreateSession = False
+  Height = 337
+  HorizontalOffset = 346
+  VerticalOffset = 160
+  Width = 337
+end

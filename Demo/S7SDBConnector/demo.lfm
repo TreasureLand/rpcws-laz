@@ -1,0 +1,1039 @@
+object FrmDemo: TFrmDemo
+  Left = 435
+  Height = 241
+  Top = 199
+  Width = 683
+  Caption = 'Demo S7SDBConnector'
+  ClientHeight = 241
+  ClientWidth = 683
+  LCLVersion = '1.6.4.0'
+  object DBGrid1: TDBGrid
+    Left = 8
+    Height = 168
+    Top = 64
+    Width = 304
+    Color = clWindow
+    Columns = <>
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 8
+    Height = 25
+    Top = 16
+    Width = 144
+    Caption = 'DBConnector'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 344
+    Height = 25
+    Top = 16
+    Width = 144
+    Caption = 'DBJsonWriter'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object Memo1: TMemo
+    Left = 344
+    Height = 178
+    Top = 48
+    Width = 296
+    Lines.Strings = (
+      'Memo1'
+    )
+    ScrollBars = ssBoth
+    TabOrder = 3
+  end
+  object DataSource1: TDataSource
+    left = 100
+    top = 55
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'CODEMPRESA'
+        DataType = ftString
+        Precision = -1
+        Size = 12
+      end    
+      item
+        Name = 'CODPESSOA'
+        DataType = ftString
+        Precision = -1
+        Size = 12
+      end    
+      item
+        Name = 'TIPO'
+        DataType = ftString
+        Precision = -1
+        Size = 1
+      end    
+      item
+        Name = 'NOME'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'RAZAO'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'CPF_CNPJ'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'FONE'
+        DataType = ftString
+        Precision = -1
+        Size = 15
+      end    
+      item
+        Name = 'FAX'
+        DataType = ftString
+        Precision = -1
+        Size = 15
+      end    
+      item
+        Name = 'ENDERECO'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'BAIRRO'
+        DataType = ftString
+        Precision = -1
+        Size = 60
+      end    
+      item
+        Name = 'CIDADE'
+        DataType = ftString
+        Precision = -1
+        Size = 60
+      end    
+      item
+        Name = 'ESTADO'
+        DataType = ftString
+        Precision = -1
+        Size = 2
+      end    
+      item
+        Name = 'CEP'
+        DataType = ftString
+        Precision = -1
+        Size = 9
+      end    
+      item
+        Name = 'DT_CAD'
+        DataType = ftDate
+        Precision = -1
+      end    
+      item
+        Name = 'OBS'
+        DataType = ftString
+        Precision = -1
+        Size = 1000
+      end    
+      item
+        Name = 'RENDAMENSAL'
+        DataType = ftFloat
+        Precision = -1
+      end    
+      item
+        Name = 'LIMITE'
+        DataType = ftFloat
+        Precision = -1
+      end    
+      item
+        Name = 'DTNASC'
+        DataType = ftDate
+        Precision = -1
+      end    
+      item
+        Name = 'CONJUGUE'
+        DataType = ftString
+        Precision = -1
+        Size = 40
+      end    
+      item
+        Name = 'SEXO'
+        DataType = ftString
+        Precision = -1
+        Size = 1
+      end    
+      item
+        Name = 'PROF'
+        DataType = ftString
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'CIVIL'
+        DataType = ftString
+        Precision = -1
+        Size = 1
+      end    
+      item
+        Name = 'TRABALHO'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'ENDTRAB'
+        DataType = ftString
+        Precision = -1
+        Size = 40
+      end    
+      item
+        Name = 'FONETRAB'
+        DataType = ftString
+        Precision = -1
+        Size = 15
+      end    
+      item
+        Name = 'DATAADM'
+        DataType = ftDate
+        Precision = -1
+      end    
+      item
+        Name = 'OPERADOR'
+        DataType = ftString
+        Precision = -1
+        Size = 10
+      end    
+      item
+        Name = 'ORGAOEXP'
+        DataType = ftString
+        Precision = -1
+        Size = 10
+      end    
+      item
+        Name = 'UFORGAOEXP'
+        DataType = ftString
+        Precision = -1
+        Size = 10
+      end    
+      item
+        Name = 'CELULAR'
+        DataType = ftString
+        Precision = -1
+        Size = 15
+      end    
+      item
+        Name = 'CONTATO'
+        DataType = ftString
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'EMAIL'
+        DataType = ftString
+        Precision = -1
+        Size = 40
+      end    
+      item
+        Name = 'FONE2'
+        DataType = ftString
+        Precision = -1
+        Size = 15
+      end    
+      item
+        Name = 'FONEP'
+        DataType = ftString
+        Precision = -1
+        Size = 15
+      end    
+      item
+        Name = 'FONEM'
+        DataType = ftString
+        Precision = -1
+        Size = 15
+      end    
+      item
+        Name = 'PAI'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'MAE'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'SITE'
+        DataType = ftString
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'MSN'
+        DataType = ftString
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'TIPOIMOVEL'
+        DataType = ftString
+        Precision = -1
+        Size = 1
+      end    
+      item
+        Name = 'TEMPORESIDENCIA'
+        DataType = ftString
+        Precision = -1
+        Size = 15
+      end    
+      item
+        Name = 'LOCALNASCIMENTO'
+        DataType = ftString
+        Precision = -1
+        Size = 15
+      end    
+      item
+        Name = 'ENDERECO2'
+        DataType = ftString
+        Precision = -1
+        Size = 40
+      end    
+      item
+        Name = 'BAIRRO2'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'CIDADE2'
+        DataType = ftString
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'ESTADO2'
+        DataType = ftString
+        Precision = -1
+        Size = 2
+      end    
+      item
+        Name = 'CEP2'
+        DataType = ftString
+        Precision = -1
+        Size = 9
+      end    
+      item
+        Name = 'FONEC'
+        DataType = ftString
+        Precision = -1
+        Size = 15
+      end    
+      item
+        Name = 'RESP_COBRANCA'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'DESC_AUTOMATICO'
+        DataType = ftFloat
+        Precision = -1
+      end    
+      item
+        Name = 'BLOQUEIADEBITOS'
+        DataType = ftString
+        Precision = -1
+        Size = 1
+      end    
+      item
+        Name = 'BLOQUEIALIMITE'
+        DataType = ftString
+        Precision = -1
+        Size = 1
+      end    
+      item
+        Name = 'SOMENTEAVISTA'
+        DataType = ftString
+        Precision = -1
+        Size = 1
+      end    
+      item
+        Name = 'STATUS'
+        DataType = ftString
+        Precision = -1
+        Size = 1
+      end    
+      item
+        Name = 'FISJUR'
+        DataType = ftString
+        Precision = -1
+        Size = 1
+      end    
+      item
+        Name = 'RG_IE'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'CREDITO1'
+        DataType = ftFloat
+        Precision = -1
+      end    
+      item
+        Name = 'CREDITO2'
+        DataType = ftFloat
+        Precision = -1
+      end    
+      item
+        Name = 'TIPO2'
+        DataType = ftString
+        Precision = -1
+        Size = 1
+      end    
+      item
+        Name = 'CODUSUARIO'
+        DataType = ftString
+        Precision = -1
+        Size = 12
+      end>
+    Database = SQLConnector1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'select * from pessoas'
+    )
+    Options = []
+    Params = <>
+    left = 424
+    top = 94
+    object SQLQuery1CODEMPRESA: TStringField
+      FieldKind = fkData
+      FieldName = 'CODEMPRESA'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = True
+      Size = 12
+    end
+    object SQLQuery1CODPESSOA: TStringField
+      FieldKind = fkData
+      FieldName = 'CODPESSOA'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = True
+      Size = 12
+    end
+    object SQLQuery1TIPO: TStringField
+      FieldKind = fkData
+      FieldName = 'TIPO'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1
+    end
+    object SQLQuery1NOME: TStringField
+      FieldKind = fkData
+      FieldName = 'NOME'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object SQLQuery1RAZAO: TStringField
+      FieldKind = fkData
+      FieldName = 'RAZAO'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object SQLQuery1CPF_CNPJ: TStringField
+      FieldKind = fkData
+      FieldName = 'CPF_CNPJ'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery1FONE: TStringField
+      FieldKind = fkData
+      FieldName = 'FONE'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+    object SQLQuery1FAX: TStringField
+      FieldKind = fkData
+      FieldName = 'FAX'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+    object SQLQuery1ENDERECO: TStringField
+      FieldKind = fkData
+      FieldName = 'ENDERECO'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object SQLQuery1BAIRRO: TStringField
+      FieldKind = fkData
+      FieldName = 'BAIRRO'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+    object SQLQuery1CIDADE: TStringField
+      FieldKind = fkData
+      FieldName = 'CIDADE'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+    object SQLQuery1ESTADO: TStringField
+      FieldKind = fkData
+      FieldName = 'ESTADO'
+      Index = 11
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 2
+    end
+    object SQLQuery1CEP: TStringField
+      FieldKind = fkData
+      FieldName = 'CEP'
+      Index = 12
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 9
+    end
+    object SQLQuery1DT_CAD: TDateField
+      FieldKind = fkData
+      FieldName = 'DT_CAD'
+      Index = 13
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery1OBS: TStringField
+      FieldKind = fkData
+      FieldName = 'OBS'
+      Index = 14
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1000
+    end
+    object SQLQuery1RENDAMENSAL: TFloatField
+      FieldKind = fkData
+      FieldName = 'RENDAMENSAL'
+      Index = 15
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      MaxValue = 0
+      MinValue = 0
+      Precision = -1
+    end
+    object SQLQuery1LIMITE: TFloatField
+      FieldKind = fkData
+      FieldName = 'LIMITE'
+      Index = 16
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      MaxValue = 0
+      MinValue = 0
+      Precision = -1
+    end
+    object SQLQuery1DTNASC: TDateField
+      FieldKind = fkData
+      FieldName = 'DTNASC'
+      Index = 17
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery1CONJUGUE: TStringField
+      FieldKind = fkData
+      FieldName = 'CONJUGUE'
+      Index = 18
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 40
+    end
+    object SQLQuery1SEXO: TStringField
+      FieldKind = fkData
+      FieldName = 'SEXO'
+      Index = 19
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1
+    end
+    object SQLQuery1PROF: TStringField
+      FieldKind = fkData
+      FieldName = 'PROF'
+      Index = 20
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object SQLQuery1CIVIL: TStringField
+      FieldKind = fkData
+      FieldName = 'CIVIL'
+      Index = 21
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1
+    end
+    object SQLQuery1TRABALHO: TStringField
+      FieldKind = fkData
+      FieldName = 'TRABALHO'
+      Index = 22
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object SQLQuery1ENDTRAB: TStringField
+      FieldKind = fkData
+      FieldName = 'ENDTRAB'
+      Index = 23
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 40
+    end
+    object SQLQuery1FONETRAB: TStringField
+      FieldKind = fkData
+      FieldName = 'FONETRAB'
+      Index = 24
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+    object SQLQuery1DATAADM: TDateField
+      FieldKind = fkData
+      FieldName = 'DATAADM'
+      Index = 25
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery1OPERADOR: TStringField
+      FieldKind = fkData
+      FieldName = 'OPERADOR'
+      Index = 26
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 10
+    end
+    object SQLQuery1ORGAOEXP: TStringField
+      FieldKind = fkData
+      FieldName = 'ORGAOEXP'
+      Index = 27
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 10
+    end
+    object SQLQuery1UFORGAOEXP: TStringField
+      FieldKind = fkData
+      FieldName = 'UFORGAOEXP'
+      Index = 28
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 10
+    end
+    object SQLQuery1CELULAR: TStringField
+      FieldKind = fkData
+      FieldName = 'CELULAR'
+      Index = 29
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+    object SQLQuery1CONTATO: TStringField
+      FieldKind = fkData
+      FieldName = 'CONTATO'
+      Index = 30
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object SQLQuery1EMAIL: TStringField
+      FieldKind = fkData
+      FieldName = 'EMAIL'
+      Index = 31
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 40
+    end
+    object SQLQuery1FONE2: TStringField
+      FieldKind = fkData
+      FieldName = 'FONE2'
+      Index = 32
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+    object SQLQuery1FONEP: TStringField
+      FieldKind = fkData
+      FieldName = 'FONEP'
+      Index = 33
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+    object SQLQuery1FONEM: TStringField
+      FieldKind = fkData
+      FieldName = 'FONEM'
+      Index = 34
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+    object SQLQuery1PAI: TStringField
+      FieldKind = fkData
+      FieldName = 'PAI'
+      Index = 35
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object SQLQuery1MAE: TStringField
+      FieldKind = fkData
+      FieldName = 'MAE'
+      Index = 36
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object SQLQuery1SITE: TStringField
+      FieldKind = fkData
+      FieldName = 'SITE'
+      Index = 37
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object SQLQuery1MSN: TStringField
+      FieldKind = fkData
+      FieldName = 'MSN'
+      Index = 38
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object SQLQuery1TIPOIMOVEL: TStringField
+      FieldKind = fkData
+      FieldName = 'TIPOIMOVEL'
+      Index = 39
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1
+    end
+    object SQLQuery1TEMPORESIDENCIA: TStringField
+      FieldKind = fkData
+      FieldName = 'TEMPORESIDENCIA'
+      Index = 40
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+    object SQLQuery1LOCALNASCIMENTO: TStringField
+      FieldKind = fkData
+      FieldName = 'LOCALNASCIMENTO'
+      Index = 41
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+    object SQLQuery1ENDERECO2: TStringField
+      FieldKind = fkData
+      FieldName = 'ENDERECO2'
+      Index = 42
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 40
+    end
+    object SQLQuery1BAIRRO2: TStringField
+      FieldKind = fkData
+      FieldName = 'BAIRRO2'
+      Index = 43
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery1CIDADE2: TStringField
+      FieldKind = fkData
+      FieldName = 'CIDADE2'
+      Index = 44
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object SQLQuery1ESTADO2: TStringField
+      FieldKind = fkData
+      FieldName = 'ESTADO2'
+      Index = 45
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 2
+    end
+    object SQLQuery1CEP2: TStringField
+      FieldKind = fkData
+      FieldName = 'CEP2'
+      Index = 46
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 9
+    end
+    object SQLQuery1FONEC: TStringField
+      FieldKind = fkData
+      FieldName = 'FONEC'
+      Index = 47
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+    object SQLQuery1RESP_COBRANCA: TStringField
+      FieldKind = fkData
+      FieldName = 'RESP_COBRANCA'
+      Index = 48
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery1DESC_AUTOMATICO: TFloatField
+      FieldKind = fkData
+      FieldName = 'DESC_AUTOMATICO'
+      Index = 49
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      MaxValue = 0
+      MinValue = 0
+      Precision = -1
+    end
+    object SQLQuery1BLOQUEIADEBITOS: TStringField
+      FieldKind = fkData
+      FieldName = 'BLOQUEIADEBITOS'
+      Index = 50
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1
+    end
+    object SQLQuery1BLOQUEIALIMITE: TStringField
+      FieldKind = fkData
+      FieldName = 'BLOQUEIALIMITE'
+      Index = 51
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1
+    end
+    object SQLQuery1SOMENTEAVISTA: TStringField
+      FieldKind = fkData
+      FieldName = 'SOMENTEAVISTA'
+      Index = 52
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1
+    end
+    object SQLQuery1STATUS: TStringField
+      FieldKind = fkData
+      FieldName = 'STATUS'
+      Index = 53
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1
+    end
+    object SQLQuery1FISJUR: TStringField
+      FieldKind = fkData
+      FieldName = 'FISJUR'
+      Index = 54
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1
+    end
+    object SQLQuery1RG_IE: TStringField
+      FieldKind = fkData
+      FieldName = 'RG_IE'
+      Index = 55
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery1CREDITO1: TFloatField
+      FieldKind = fkData
+      FieldName = 'CREDITO1'
+      Index = 56
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      MaxValue = 0
+      MinValue = 0
+      Precision = -1
+    end
+    object SQLQuery1CREDITO2: TFloatField
+      FieldKind = fkData
+      FieldName = 'CREDITO2'
+      Index = 57
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      MaxValue = 0
+      MinValue = 0
+      Precision = -1
+    end
+    object SQLQuery1TIPO2: TStringField
+      FieldKind = fkData
+      FieldName = 'TIPO2'
+      Index = 58
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1
+    end
+    object SQLQuery1CODUSUARIO: TStringField
+      FieldKind = fkData
+      FieldName = 'CODUSUARIO'
+      Index = 59
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 12
+    end
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Database = SQLConnector1
+    Options = []
+    left = 384
+    top = 94
+  end
+  object SQLConnector1: TSQLConnector
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'C:\Gold_Pro1.0\GOLD_PRO.FDB'
+    KeepConnection = False
+    Password = 'masterkey'
+    Transaction = SQLTransaction1
+    UserName = 'sysdba'
+    Options = []
+    ConnectorType = 'Firebird'
+    left = 344
+    top = 94
+  end
+end

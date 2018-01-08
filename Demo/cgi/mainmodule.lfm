@@ -1,0 +1,15 @@
+object MainWebModule: TMainWebModule
+  OldCreateOrder = False
+  Actions = <  
+    item
+      Name = 'MainWebAction'
+      Default = True
+      OnRequest = MainWebActionRequest
+      Template.AllowTagParams = False
+    end>
+  CreateSession = False
+  Height = 282
+  HorizontalOffset = 529
+  VerticalOffset = 167
+  Width = 305
+end

@@ -1,0 +1,3 @@
+select * from pessoas where codpessoa = :codpessoa 
+
+ rows 1 to 10

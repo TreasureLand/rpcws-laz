@@ -1,0 +1,1182 @@
+07/01/2018 09:08:05	Request header count: 3
+07/01/2018 09:08:05	152: 152
+07/01/2018 09:08:05	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 09:08:05	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 09:08:05	{ "jsonrpc" : "2.0", "method" : "conta", "params" : ["0", { "SQL" : "select * from conta", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+07/01/2018 09:09:44	Request header count: 3
+07/01/2018 09:09:44	152: 152
+07/01/2018 09:09:44	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 09:09:44	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 09:09:44	{ "jsonrpc" : "2.0", "method" : "conta", "params" : ["0", { "SQL" : "select * from conta", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+07/01/2018 09:10:52	Request header count: 3
+07/01/2018 09:10:52	193: 193
+07/01/2018 09:10:52	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 09:10:52	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 09:10:52	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }
+07/01/2018 09:10:57	Request header count: 3
+07/01/2018 09:10:57	193: 193
+07/01/2018 09:10:57	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 09:10:57	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 09:10:57	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }
+07/01/2018 09:11:02	Request header count: 3
+07/01/2018 09:11:02	172: 172
+07/01/2018 09:11:02	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 09:11:02	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 09:11:02	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }
+07/01/2018 09:53:13	Request header count: 3
+07/01/2018 09:53:13	71: 71
+07/01/2018 09:53:13	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 09:53:13	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 09:53:13	{ "jsonrpc" : "2.0", "method" : "Disponivel", "params" : [], "id" : 0 }
+07/01/2018 09:53:24	Request header count: 3
+07/01/2018 09:53:24	144: 144
+07/01/2018 09:53:24	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 09:53:24	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 09:53:24	{ "jsonrpc" : "2.0", "method" : "QuerySql", "params" : ["0", { "TABLE" : "cadcidade", "FIELDNAME" : "", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+07/01/2018 09:53:42	Request header count: 3
+07/01/2018 09:53:42	144: 144
+07/01/2018 09:53:42	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 09:53:42	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 09:53:42	{ "jsonrpc" : "2.0", "method" : "QuerySql", "params" : ["0", { "TABLE" : "cadcidade", "FIELDNAME" : "", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+07/01/2018 09:54:03	Request header count: 3
+07/01/2018 09:54:03	144: 144
+07/01/2018 09:54:03	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 09:54:03	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 09:54:03	{ "jsonrpc" : "2.0", "method" : "QuerySql", "params" : ["0", { "TABLE" : "cadcidade", "FIELDNAME" : "", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+07/01/2018 09:54:28	Request header count: 3
+07/01/2018 09:54:28	172: 172
+07/01/2018 09:54:28	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 09:54:28	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 09:54:28	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }
+07/01/2018 09:55:11	Request header count: 3
+07/01/2018 09:55:11	71: 71
+07/01/2018 09:55:11	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 09:55:11	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 09:55:11	{ "jsonrpc" : "2.0", "method" : "Disponivel", "params" : [], "id" : 0 }
+07/01/2018 09:55:15	Request header count: 3
+07/01/2018 09:55:15	172: 172
+07/01/2018 09:55:15	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 09:55:15	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 09:55:15	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }
+07/01/2018 09:57:33	Request header count: 3
+07/01/2018 09:57:33	71: 71
+07/01/2018 09:57:33	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 09:57:33	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 09:57:33	{ "jsonrpc" : "2.0", "method" : "Disponivel", "params" : [], "id" : 0 }
+07/01/2018 09:57:36	Request header count: 3
+07/01/2018 09:57:36	144: 144
+07/01/2018 09:57:36	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 09:57:36	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 09:57:36	{ "jsonrpc" : "2.0", "method" : "QuerySql", "params" : ["0", { "TABLE" : "cadcidade", "FIELDNAME" : "", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+07/01/2018 10:03:38	Request header count: 3
+07/01/2018 10:03:38	71: 71
+07/01/2018 10:03:38	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:03:38	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:03:38	{ "jsonrpc" : "2.0", "method" : "Disponivel", "params" : [], "id" : 0 }
+07/01/2018 10:03:57	Request header count: 3
+07/01/2018 10:03:57	71: 71
+07/01/2018 10:03:57	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:03:57	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:03:57	{ "jsonrpc" : "2.0", "method" : "Disponivel", "params" : [], "id" : 0 }
+07/01/2018 10:04:01	Request header count: 3
+07/01/2018 10:04:01	172: 172
+07/01/2018 10:04:01	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:04:01	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:04:01	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }
+07/01/2018 10:06:39	Request header count: 3
+07/01/2018 10:06:39	144: 144
+07/01/2018 10:06:39	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:06:39	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:06:39	{ "jsonrpc" : "2.0", "method" : "QuerySql", "params" : ["0", { "TABLE" : "cadcidade", "FIELDNAME" : "", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+07/01/2018 10:06:47	Request header count: 3
+07/01/2018 10:06:47	144: 144
+07/01/2018 10:06:47	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:06:47	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:06:47	{ "jsonrpc" : "2.0", "method" : "QuerySql", "params" : ["0", { "TABLE" : "cadcidade", "FIELDNAME" : "", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+07/01/2018 10:07:23	Request header count: 3
+07/01/2018 10:07:23	193: 193
+07/01/2018 10:07:23	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:07:23	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:07:23	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }
+07/01/2018 10:09:40	Request header count: 3
+07/01/2018 10:09:40	144: 144
+07/01/2018 10:09:40	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:09:40	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:09:40	{ "jsonrpc" : "2.0", "method" : "QuerySql", "params" : ["0", { "TABLE" : "cadcidade", "FIELDNAME" : "", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+07/01/2018 10:10:10	Request header count: 3
+07/01/2018 10:10:10	246: 246
+07/01/2018 10:10:10	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:10	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:10	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:21	Request header count: 3
+07/01/2018 10:10:21	267: 267
+07/01/2018 10:10:21	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:21	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:21	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:23	Request header count: 3
+07/01/2018 10:10:23	267: 267
+07/01/2018 10:10:23	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:23	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:23	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:25	Request header count: 3
+07/01/2018 10:10:25	267: 267
+07/01/2018 10:10:25	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:25	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:25	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:26	Request header count: 3
+07/01/2018 10:10:26	267: 267
+07/01/2018 10:10:26	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:26	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:26	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:27	Request header count: 3
+07/01/2018 10:10:27	267: 267
+07/01/2018 10:10:27	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:27	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:27	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:27	Request header count: 3
+07/01/2018 10:10:27	267: 267
+07/01/2018 10:10:27	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:27	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:27	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:28	Request header count: 3
+07/01/2018 10:10:28	267: 267
+07/01/2018 10:10:28	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:28	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:28	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:28	Request header count: 3
+07/01/2018 10:10:28	267: 267
+07/01/2018 10:10:28	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:28	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:28	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:29	Request header count: 3
+07/01/2018 10:10:29	267: 267
+07/01/2018 10:10:29	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:29	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:29	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:29	Request header count: 3
+07/01/2018 10:10:29	267: 267
+07/01/2018 10:10:29	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:29	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:29	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:30	Request header count: 3
+07/01/2018 10:10:30	267: 267
+07/01/2018 10:10:30	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:30	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:30	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:30	Request header count: 3
+07/01/2018 10:10:30	267: 267
+07/01/2018 10:10:30	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:30	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:30	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:30	Request header count: 3
+07/01/2018 10:10:30	267: 267
+07/01/2018 10:10:30	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:30	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:30	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:30	Request header count: 3
+07/01/2018 10:10:30	267: 267
+07/01/2018 10:10:30	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:30	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:30	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:30	Request header count: 3
+07/01/2018 10:10:30	267: 267
+07/01/2018 10:10:30	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:30	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:30	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:31	Request header count: 3
+07/01/2018 10:10:31	267: 267
+07/01/2018 10:10:31	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:31	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:31	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:31	Request header count: 3
+07/01/2018 10:10:31	267: 267
+07/01/2018 10:10:31	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:31	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:31	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:31	Request header count: 3
+07/01/2018 10:10:31	267: 267
+07/01/2018 10:10:31	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:31	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:31	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:31	Request header count: 3
+07/01/2018 10:10:31	267: 267
+07/01/2018 10:10:31	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:31	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:31	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:31	Request header count: 3
+07/01/2018 10:10:31	267: 267
+07/01/2018 10:10:31	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:31	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:32	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:32	Request header count: 3
+07/01/2018 10:10:32	267: 267
+07/01/2018 10:10:32	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:32	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:32	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:32	Request header count: 3
+07/01/2018 10:10:32	267: 267
+07/01/2018 10:10:32	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:32	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:32	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:32	Request header count: 3
+07/01/2018 10:10:32	267: 267
+07/01/2018 10:10:32	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:32	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:32	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:32	Request header count: 3
+07/01/2018 10:10:32	267: 267
+07/01/2018 10:10:32	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:32	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:32	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:32	Request header count: 3
+07/01/2018 10:10:32	267: 267
+07/01/2018 10:10:32	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:32	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:32	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:33	Request header count: 3
+07/01/2018 10:10:33	267: 267
+07/01/2018 10:10:33	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:33	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:33	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:33	Request header count: 3
+07/01/2018 10:10:33	267: 267
+07/01/2018 10:10:33	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:33	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:33	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:33	Request header count: 3
+07/01/2018 10:10:33	267: 267
+07/01/2018 10:10:33	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:33	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:33	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:33	Request header count: 3
+07/01/2018 10:10:33	267: 267
+07/01/2018 10:10:33	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:33	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:33	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:33	Request header count: 3
+07/01/2018 10:10:33	267: 267
+07/01/2018 10:10:33	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:33	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:34	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:34	Request header count: 3
+07/01/2018 10:10:34	267: 267
+07/01/2018 10:10:34	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:34	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:34	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:34	Request header count: 3
+07/01/2018 10:10:34	267: 267
+07/01/2018 10:10:34	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:34	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:34	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:34	Request header count: 3
+07/01/2018 10:10:34	267: 267
+07/01/2018 10:10:34	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:34	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:34	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:34	Request header count: 3
+07/01/2018 10:10:34	267: 267
+07/01/2018 10:10:34	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:34	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:34	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:34	Request header count: 3
+07/01/2018 10:10:34	267: 267
+07/01/2018 10:10:34	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:34	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:34	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:35	Request header count: 3
+07/01/2018 10:10:35	267: 267
+07/01/2018 10:10:35	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:35	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:35	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:35	Request header count: 3
+07/01/2018 10:10:35	267: 267
+07/01/2018 10:10:35	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:35	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:35	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:35	Request header count: 3
+07/01/2018 10:10:35	267: 267
+07/01/2018 10:10:35	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:35	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:35	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:35	Request header count: 3
+07/01/2018 10:10:35	267: 267
+07/01/2018 10:10:35	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:35	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:35	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:35	Request header count: 3
+07/01/2018 10:10:35	267: 267
+07/01/2018 10:10:35	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:35	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:35	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:36	Request header count: 3
+07/01/2018 10:10:36	267: 267
+07/01/2018 10:10:36	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:36	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:36	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:36	Request header count: 3
+07/01/2018 10:10:36	267: 267
+07/01/2018 10:10:36	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:36	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:36	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:40	Request header count: 3
+07/01/2018 10:10:40	246: 246
+07/01/2018 10:10:41	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:41	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:41	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:41	Request header count: 3
+07/01/2018 10:10:41	246: 246
+07/01/2018 10:10:41	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:41	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:41	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:42	Request header count: 3
+07/01/2018 10:10:42	246: 246
+07/01/2018 10:10:42	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:42	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:42	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:42	Request header count: 3
+07/01/2018 10:10:42	246: 246
+07/01/2018 10:10:42	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:42	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:42	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:42	Request header count: 3
+07/01/2018 10:10:42	246: 246
+07/01/2018 10:10:42	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:42	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:42	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:43	Request header count: 3
+07/01/2018 10:10:43	246: 246
+07/01/2018 10:10:43	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:43	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:43	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:43	Request header count: 3
+07/01/2018 10:10:43	246: 246
+07/01/2018 10:10:43	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:43	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:43	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:43	Request header count: 3
+07/01/2018 10:10:43	246: 246
+07/01/2018 10:10:43	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:43	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:43	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:43	Request header count: 3
+07/01/2018 10:10:43	246: 246
+07/01/2018 10:10:43	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:43	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:43	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:44	Request header count: 3
+07/01/2018 10:10:44	246: 246
+07/01/2018 10:10:44	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:44	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:44	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:44	Request header count: 3
+07/01/2018 10:10:44	246: 246
+07/01/2018 10:10:44	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:44	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:44	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:44	Request header count: 3
+07/01/2018 10:10:44	246: 246
+07/01/2018 10:10:44	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:44	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:44	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:45	Request header count: 3
+07/01/2018 10:10:45	246: 246
+07/01/2018 10:10:45	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:45	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:45	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:45	Request header count: 3
+07/01/2018 10:10:45	246: 246
+07/01/2018 10:10:45	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:45	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:45	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:45	Request header count: 3
+07/01/2018 10:10:45	246: 246
+07/01/2018 10:10:45	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:45	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:45	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:45	Request header count: 3
+07/01/2018 10:10:45	246: 246
+07/01/2018 10:10:45	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:45	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:45	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:46	Request header count: 3
+07/01/2018 10:10:46	246: 246
+07/01/2018 10:10:46	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:46	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:46	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:46	Request header count: 3
+07/01/2018 10:10:46	246: 246
+07/01/2018 10:10:46	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:46	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:46	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:47	Request header count: 3
+07/01/2018 10:10:47	246: 246
+07/01/2018 10:10:47	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:47	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:47	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:47	Request header count: 3
+07/01/2018 10:10:47	246: 246
+07/01/2018 10:10:47	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:47	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:47	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:47	Request header count: 3
+07/01/2018 10:10:47	246: 246
+07/01/2018 10:10:47	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:47	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:47	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:47	Request header count: 3
+07/01/2018 10:10:47	246: 246
+07/01/2018 10:10:47	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:47	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:47	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:10:48	Request header count: 3
+07/01/2018 10:10:48	246: 246
+07/01/2018 10:10:48	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:10:48	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:10:48	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:45	Request header count: 3
+07/01/2018 10:11:45	267: 267
+07/01/2018 10:11:45	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:45	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:45	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:46	Request header count: 3
+07/01/2018 10:11:46	267: 267
+07/01/2018 10:11:46	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:46	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:46	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:46	Request header count: 3
+07/01/2018 10:11:46	267: 267
+07/01/2018 10:11:46	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:46	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:46	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:47	Request header count: 3
+07/01/2018 10:11:47	267: 267
+07/01/2018 10:11:47	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:47	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:47	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:48	Request header count: 3
+07/01/2018 10:11:48	267: 267
+07/01/2018 10:11:48	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:48	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:48	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:48	Request header count: 3
+07/01/2018 10:11:48	267: 267
+07/01/2018 10:11:48	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:48	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:48	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:49	Request header count: 3
+07/01/2018 10:11:49	267: 267
+07/01/2018 10:11:49	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:49	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:49	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:49	Request header count: 3
+07/01/2018 10:11:49	267: 267
+07/01/2018 10:11:49	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:49	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:49	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:50	Request header count: 3
+07/01/2018 10:11:50	267: 267
+07/01/2018 10:11:50	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:50	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:50	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:50	Request header count: 3
+07/01/2018 10:11:50	267: 267
+07/01/2018 10:11:50	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:50	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:50	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:51	Request header count: 3
+07/01/2018 10:11:51	267: 267
+07/01/2018 10:11:51	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:51	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:51	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:51	Request header count: 3
+07/01/2018 10:11:51	267: 267
+07/01/2018 10:11:51	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:51	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:51	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:52	Request header count: 3
+07/01/2018 10:11:52	267: 267
+07/01/2018 10:11:52	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:52	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:52	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:52	Request header count: 3
+07/01/2018 10:11:52	267: 267
+07/01/2018 10:11:52	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:52	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:52	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:52	Request header count: 3
+07/01/2018 10:11:52	267: 267
+07/01/2018 10:11:52	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:52	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:52	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:53	Request header count: 3
+07/01/2018 10:11:53	267: 267
+07/01/2018 10:11:53	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:53	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:53	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:53	Request header count: 3
+07/01/2018 10:11:53	267: 267
+07/01/2018 10:11:53	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:53	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:53	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:54	Request header count: 3
+07/01/2018 10:11:54	267: 267
+07/01/2018 10:11:54	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:54	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:54	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:54	Request header count: 3
+07/01/2018 10:11:54	267: 267
+07/01/2018 10:11:54	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:54	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:54	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:55	Request header count: 3
+07/01/2018 10:11:55	267: 267
+07/01/2018 10:11:55	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:55	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:55	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:55	Request header count: 3
+07/01/2018 10:11:55	267: 267
+07/01/2018 10:11:55	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:55	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:55	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:56	Request header count: 3
+07/01/2018 10:11:56	267: 267
+07/01/2018 10:11:56	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:56	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:56	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:56	Request header count: 3
+07/01/2018 10:11:56	267: 267
+07/01/2018 10:11:56	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:56	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:56	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:58	Request header count: 3
+07/01/2018 10:11:58	246: 246
+07/01/2018 10:11:58	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:58	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:58	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:58	Request header count: 3
+07/01/2018 10:11:58	246: 246
+07/01/2018 10:11:58	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:58	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:58	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:59	Request header count: 3
+07/01/2018 10:11:59	246: 246
+07/01/2018 10:11:59	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:59	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:59	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:11:59	Request header count: 3
+07/01/2018 10:11:59	246: 246
+07/01/2018 10:11:59	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:11:59	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:11:59	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:00	Request header count: 3
+07/01/2018 10:12:00	246: 246
+07/01/2018 10:12:00	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:00	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:00	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:00	Request header count: 3
+07/01/2018 10:12:00	246: 246
+07/01/2018 10:12:00	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:00	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:00	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:00	Request header count: 3
+07/01/2018 10:12:00	246: 246
+07/01/2018 10:12:00	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:00	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:00	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:01	Request header count: 3
+07/01/2018 10:12:01	246: 246
+07/01/2018 10:12:01	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:01	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:01	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:01	Request header count: 3
+07/01/2018 10:12:01	246: 246
+07/01/2018 10:12:01	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:01	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:01	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:01	Request header count: 3
+07/01/2018 10:12:01	246: 246
+07/01/2018 10:12:01	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:01	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:01	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:01	Request header count: 3
+07/01/2018 10:12:02	246: 246
+07/01/2018 10:12:02	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:02	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:02	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:02	Request header count: 3
+07/01/2018 10:12:02	246: 246
+07/01/2018 10:12:02	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:02	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:02	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:02	Request header count: 3
+07/01/2018 10:12:02	246: 246
+07/01/2018 10:12:02	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:02	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:02	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:02	Request header count: 3
+07/01/2018 10:12:02	246: 246
+07/01/2018 10:12:02	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:02	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:02	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:02	Request header count: 3
+07/01/2018 10:12:02	246: 246
+07/01/2018 10:12:02	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:02	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:02	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:03	Request header count: 3
+07/01/2018 10:12:03	246: 246
+07/01/2018 10:12:03	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:03	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:03	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:03	Request header count: 3
+07/01/2018 10:12:03	246: 246
+07/01/2018 10:12:03	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:03	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:03	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:03	Request header count: 3
+07/01/2018 10:12:03	246: 246
+07/01/2018 10:12:03	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:03	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:03	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:03	Request header count: 3
+07/01/2018 10:12:03	246: 246
+07/01/2018 10:12:03	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:03	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:03	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:04	Request header count: 3
+07/01/2018 10:12:04	246: 246
+07/01/2018 10:12:04	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:04	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:04	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:04	Request header count: 3
+07/01/2018 10:12:04	246: 246
+07/01/2018 10:12:04	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:04	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:04	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:04	Request header count: 3
+07/01/2018 10:12:04	246: 246
+07/01/2018 10:12:04	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:04	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:04	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:04	Request header count: 3
+07/01/2018 10:12:04	246: 246
+07/01/2018 10:12:04	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:04	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:04	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:05	Request header count: 3
+07/01/2018 10:12:05	246: 246
+07/01/2018 10:12:05	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:05	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:05	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:05	Request header count: 3
+07/01/2018 10:12:05	246: 246
+07/01/2018 10:12:05	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:05	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:05	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:05	Request header count: 3
+07/01/2018 10:12:05	246: 246
+07/01/2018 10:12:05	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:05	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:05	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:05	Request header count: 3
+07/01/2018 10:12:05	246: 246
+07/01/2018 10:12:05	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:05	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:05	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:05	Request header count: 3
+07/01/2018 10:12:05	246: 246
+07/01/2018 10:12:05	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:05	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:06	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:06	Request header count: 3
+07/01/2018 10:12:06	246: 246
+07/01/2018 10:12:06	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:06	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:06	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:06	Request header count: 3
+07/01/2018 10:12:06	246: 246
+07/01/2018 10:12:06	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:06	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:06	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:06	Request header count: 3
+07/01/2018 10:12:06	246: 246
+07/01/2018 10:12:06	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:06	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:06	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:06	Request header count: 3
+07/01/2018 10:12:06	246: 246
+07/01/2018 10:12:06	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:06	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:06	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:07	Request header count: 3
+07/01/2018 10:12:07	246: 246
+07/01/2018 10:12:07	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:07	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:07	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:07	Request header count: 3
+07/01/2018 10:12:07	246: 246
+07/01/2018 10:12:07	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:07	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:07	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:07	Request header count: 3
+07/01/2018 10:12:07	246: 246
+07/01/2018 10:12:07	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:07	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:07	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:07	Request header count: 3
+07/01/2018 10:12:07	246: 246
+07/01/2018 10:12:07	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:07	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:07	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:08	Request header count: 3
+07/01/2018 10:12:08	246: 246
+07/01/2018 10:12:08	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:08	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:08	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:08	Request header count: 3
+07/01/2018 10:12:08	246: 246
+07/01/2018 10:12:08	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:08	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:08	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:08	Request header count: 3
+07/01/2018 10:12:08	246: 246
+07/01/2018 10:12:08	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:08	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:08	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:08	Request header count: 3
+07/01/2018 10:12:08	246: 246
+07/01/2018 10:12:08	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:08	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:08	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:08	Request header count: 3
+07/01/2018 10:12:08	246: 246
+07/01/2018 10:12:08	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:09	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:09	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:09	Request header count: 3
+07/01/2018 10:12:09	246: 246
+07/01/2018 10:12:09	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:09	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:09	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:09	Request header count: 3
+07/01/2018 10:12:09	246: 246
+07/01/2018 10:12:09	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:09	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:09	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:09	Request header count: 3
+07/01/2018 10:12:09	246: 246
+07/01/2018 10:12:09	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:09	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:09	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:09	Request header count: 3
+07/01/2018 10:12:09	246: 246
+07/01/2018 10:12:09	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:09	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:09	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:10	Request header count: 3
+07/01/2018 10:12:10	246: 246
+07/01/2018 10:12:10	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:10	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:10	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:10	Request header count: 3
+07/01/2018 10:12:10	246: 246
+07/01/2018 10:12:10	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:10	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:10	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:10	Request header count: 3
+07/01/2018 10:12:10	246: 246
+07/01/2018 10:12:10	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:10	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:10	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:10	Request header count: 3
+07/01/2018 10:12:10	246: 246
+07/01/2018 10:12:10	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:10	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:10	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:11	Request header count: 3
+07/01/2018 10:12:11	246: 246
+07/01/2018 10:12:11	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:11	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:11	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:11	Request header count: 3
+07/01/2018 10:12:11	246: 246
+07/01/2018 10:12:11	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:11	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:11	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:11	Request header count: 3
+07/01/2018 10:12:11	246: 246
+07/01/2018 10:12:11	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:11	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:11	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:11	Request header count: 3
+07/01/2018 10:12:11	246: 246
+07/01/2018 10:12:11	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:11	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:11	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:12	Request header count: 3
+07/01/2018 10:12:12	246: 246
+07/01/2018 10:12:12	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:12	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:12	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:12	Request header count: 3
+07/01/2018 10:12:12	246: 246
+07/01/2018 10:12:12	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:12	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:12	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:12	Request header count: 3
+07/01/2018 10:12:12	246: 246
+07/01/2018 10:12:12	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:12	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:12	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:12	Request header count: 3
+07/01/2018 10:12:12	246: 246
+07/01/2018 10:12:12	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:12	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:12	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:12	Request header count: 3
+07/01/2018 10:12:12	246: 246
+07/01/2018 10:12:12	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:12	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:12	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:13	Request header count: 3
+07/01/2018 10:12:13	246: 246
+07/01/2018 10:12:13	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:13	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:13	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:13	Request header count: 3
+07/01/2018 10:12:13	246: 246
+07/01/2018 10:12:13	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:13	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:13	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:13	Request header count: 3
+07/01/2018 10:12:13	246: 246
+07/01/2018 10:12:13	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:13	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:13	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:13	Request header count: 3
+07/01/2018 10:12:13	246: 246
+07/01/2018 10:12:13	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:13	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:13	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:12:13	Request header count: 3
+07/01/2018 10:12:13	246: 246
+07/01/2018 10:12:13	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:12:13	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:12:13	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+07/01/2018 10:31:54	Request header count: 3
+07/01/2018 10:31:54	71: 71
+07/01/2018 10:31:54	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:31:54	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:31:54	{ "jsonrpc" : "2.0", "method" : "Disponivel", "params" : [], "id" : 0 }
+07/01/2018 10:32:23	Request header count: 3
+07/01/2018 10:32:23	130: 130
+07/01/2018 10:32:23	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:32:23	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:32:23	{ "jsonrpc" : "2.0", "method" : "QuerySql", "params" : ["0", ",\"FIELDNAME\":\"\",\"METHODTYPE\":\"wsmtFind\"}", true], "id" : 0 }
+07/01/2018 10:34:30	Request header count: 3
+07/01/2018 10:34:30	71: 71
+07/01/2018 10:34:30	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:34:30	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:34:30	{ "jsonrpc" : "2.0", "method" : "Disponivel", "params" : [], "id" : 0 }
+07/01/2018 10:37:02	Request header count: 3
+07/01/2018 10:37:02	71: 71
+07/01/2018 10:37:02	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:37:02	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:37:02	{ "jsonrpc" : "2.0", "method" : "Disponivel", "params" : [], "id" : 0 }
+07/01/2018 10:37:41	Request header count: 3
+07/01/2018 10:37:41	71: 71
+07/01/2018 10:37:41	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:37:41	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:37:41	{ "jsonrpc" : "2.0", "method" : "Disponivel", "params" : [], "id" : 0 }
+07/01/2018 10:40:32	Request header count: 3
+07/01/2018 10:40:32	71: 71
+07/01/2018 10:40:32	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:40:32	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:40:32	{ "jsonrpc" : "2.0", "method" : "Disponivel", "params" : [], "id" : 0 }
+07/01/2018 10:41:00	Request header count: 3
+07/01/2018 10:41:00	144: 144
+07/01/2018 10:41:00	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:41:00	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:41:00	{ "jsonrpc" : "2.0", "method" : "QuerySql", "params" : ["0", { "TABLE" : "cadcidade", "FIELDNAME" : "", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+07/01/2018 10:41:05	Request header count: 3
+07/01/2018 10:41:05	165: 165
+07/01/2018 10:41:05	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:41:05	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:41:05	{ "jsonrpc" : "2.0", "method" : "QuerySql", "params" : ["0", { "TABLE" : "cadcidade", "FIELDNAME" : "", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+07/01/2018 10:41:07	Request header count: 3
+07/01/2018 10:41:07	144: 144
+07/01/2018 10:41:07	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:41:07	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:41:07	{ "jsonrpc" : "2.0", "method" : "QuerySql", "params" : ["0", { "TABLE" : "cadcidade", "FIELDNAME" : "", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+07/01/2018 10:41:24	Request header count: 3
+07/01/2018 10:41:24	144: 144
+07/01/2018 10:41:24	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+07/01/2018 10:41:24	127.0.0.1:8084: 127.0.0.1:8084
+07/01/2018 10:41:24	{ "jsonrpc" : "2.0", "method" : "QuerySql", "params" : ["0", { "TABLE" : "cadcidade", "FIELDNAME" : "", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+08/01/2018 11:19:48	Request header count: 3
+08/01/2018 11:19:48	71: 71
+08/01/2018 11:19:48	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 11:19:48	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:19:48	{ "jsonrpc" : "2.0", "method" : "Disponivel", "params" : [], "id" : 0 }
+08/01/2018 11:19:52	Request header count: 3
+08/01/2018 11:19:52	172: 172
+08/01/2018 11:19:52	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 11:19:52	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:19:52	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }
+08/01/2018 11:23:21	Request header count: 3
+08/01/2018 11:23:21	193: 193
+08/01/2018 11:23:22	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 11:23:22	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:23:22	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }
+08/01/2018 11:23:30	Request header count: 3
+08/01/2018 11:23:30	144: 144
+08/01/2018 11:23:30	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 11:23:30	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:23:30	{ "jsonrpc" : "2.0", "method" : "QuerySql", "params" : ["0", { "TABLE" : "cadcidade", "FIELDNAME" : "", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+08/01/2018 11:24:39	Request header count: 3
+08/01/2018 11:24:39	268: 268
+08/01/2018 11:24:39	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 11:24:39	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:24:39	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%CUIABA%" } }], "id" : 0 }
+08/01/2018 11:24:42	Request header count: 3
+08/01/2018 11:24:42	266: 266
+08/01/2018 11:24:42	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 11:24:42	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:24:42	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%CACE%" } }], "id" : 0 }
+08/01/2018 11:33:38	Request header count: 3
+08/01/2018 11:33:38	71: 71
+08/01/2018 11:33:38	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 11:33:38	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:33:38	{ "jsonrpc" : "2.0", "method" : "Disponivel", "params" : [], "id" : 0 }
+08/01/2018 11:34:32	Request header count: 3
+08/01/2018 11:34:32	193: 193
+08/01/2018 11:34:32	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 11:34:32	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:34:32	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }
+08/01/2018 11:35:54	Request header count: 3
+08/01/2018 11:35:54	193: 193
+08/01/2018 11:35:54	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 11:35:54	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:35:54	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }
+08/01/2018 11:36:05	Request header count: 3
+08/01/2018 11:36:05	144: 144
+08/01/2018 11:36:05	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 11:36:05	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:36:05	{ "jsonrpc" : "2.0", "method" : "QuerySql", "params" : ["0", { "TABLE" : "cadcidade", "FIELDNAME" : "", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+08/01/2018 11:37:28	Request header count: 3
+08/01/2018 11:37:28	144: 144
+08/01/2018 11:37:28	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 11:37:28	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:37:28	{ "jsonrpc" : "2.0", "method" : "QuerySql", "params" : ["0", { "TABLE" : "cadcidade", "FIELDNAME" : "", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+08/01/2018 11:37:43	Request header count: 3
+08/01/2018 11:37:43	144: 144
+08/01/2018 11:37:43	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 11:37:43	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:37:43	{ "jsonrpc" : "2.0", "method" : "QuerySql", "params" : ["0", { "TABLE" : "cadcidade", "FIELDNAME" : "", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+08/01/2018 11:38:01	Request header count: 3
+08/01/2018 11:38:01	193: 193
+08/01/2018 11:38:01	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 11:38:01	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:38:01	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }
+08/01/2018 11:39:39	Request header count: 3
+08/01/2018 11:39:39	267: 267
+08/01/2018 11:39:39	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 11:39:39	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:39:39	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%JAURU%" } }], "id" : 0 }
+08/01/2018 11:39:49	Request header count: 3
+08/01/2018 11:39:49	265: 265
+08/01/2018 11:39:49	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 11:39:49	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:39:49	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VAZ%" } }], "id" : 0 }
+08/01/2018 11:39:56	Request header count: 3
+08/01/2018 11:39:56	265: 265
+08/01/2018 11:39:56	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 11:39:56	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:39:56	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VAZ%" } }], "id" : 0 }
+08/01/2018 11:39:57	Request header count: 3
+08/01/2018 11:39:57	265: 265
+08/01/2018 11:39:57	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 11:39:57	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:39:57	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VAZ%" } }], "id" : 0 }
+08/01/2018 11:39:57	Request header count: 3
+08/01/2018 11:39:57	265: 265
+08/01/2018 11:39:57	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 11:39:57	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:39:57	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VAZ%" } }], "id" : 0 }
+08/01/2018 11:39:58	Request header count: 3
+08/01/2018 11:39:58	265: 265
+08/01/2018 11:39:58	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 11:39:58	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:39:58	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VAZ%" } }], "id" : 0 }
+08/01/2018 11:40:02	Request header count: 3
+08/01/2018 11:40:02	267: 267
+08/01/2018 11:40:02	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 11:40:02	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:40:02	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%VARZE%" } }], "id" : 0 }
+08/01/2018 11:40:19	Request header count: 3
+08/01/2018 11:40:19	193: 193
+08/01/2018 11:40:19	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 11:40:19	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:40:19	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }
+08/01/2018 11:41:51	Request header count: 3
+08/01/2018 11:41:51	193: 193
+08/01/2018 11:41:51	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 11:41:51	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:41:51	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }
+08/01/2018 11:51:55	Request header count: 7
+08/01/2018 11:51:55	text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+08/01/2018 11:51:55	gzip, deflate, br: gzip, deflate, br
+08/01/2018 11:51:55	pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+08/01/2018 11:51:55	keep-alive: keep-alive
+08/01/2018 11:51:55	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:51:55	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+08/01/2018 11:51:55	Request header count: 8
+08/01/2018 11:51:55	image/webp,image/apng,image/*,*/*;q=0.8: image/webp,image/apng,image/*,*/*;q=0.8
+08/01/2018 11:51:55	gzip, deflate, br: gzip, deflate, br
+08/01/2018 11:51:55	pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+08/01/2018 11:51:55	keep-alive: keep-alive
+08/01/2018 11:51:55	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:51:55	http://127.0.0.1:8084/%7B%22jsonrpc%22%20:%20%222.0%22,%22method%22%20:%20%22QuerySQL%22,%22params%22%20:%20[%220%22,%7B%22SQL%22%20:%20%22select%20*%20from%20cadcidade%22,%22Pacotes%22%20:%20%220%22,%22Posicao%22%20:%20%220%22,%22QUERYBASE64%22%20:%20%22S%22,%22METHODTYPE%22%20:%20%22wsmtOpen%22%7D],%22id%22%20:%200%7D: http://127.0.0.1:8084/%7B%22jsonrpc%22%20:%20%222.0%22,%22method%22%20:%20%22QuerySQL%22,%22params%22%20:%20[%220%22,%7B%22SQL%22%20:%20%22select%20*%20from%20cadcidade%22,%22Pacotes%22%20:%20%220%22,%22Posicao%22%20:%20%220%22,%22QUERYBASE64%22%20:%20%22S%22,%22METHODTYPE%22%20:%20%22wsmtOpen%22%7D],%22id%22%20:%200%7D
+08/01/2018 11:51:55	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+08/01/2018 11:52:35	Request header count: 7
+08/01/2018 11:52:35	text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+08/01/2018 11:52:35	gzip, deflate, br: gzip, deflate, br
+08/01/2018 11:52:35	pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+08/01/2018 11:52:35	keep-alive: keep-alive
+08/01/2018 11:52:35	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:52:35	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+08/01/2018 11:52:35	Request header count: 8
+08/01/2018 11:52:35	image/webp,image/apng,image/*,*/*;q=0.8: image/webp,image/apng,image/*,*/*;q=0.8
+08/01/2018 11:52:35	gzip, deflate, br: gzip, deflate, br
+08/01/2018 11:52:35	pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+08/01/2018 11:52:35	keep-alive: keep-alive
+08/01/2018 11:52:35	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 11:52:35	http://127.0.0.1:8084/%7B%22jsonrpc%22%20:%20%222.0%22,%22method%22%20:%20%22QuerySQL%22,%22params%22%20:%20[%220%22,%7B%22SQL%22%20:%20%22select%20*%20from%20cadcidade%22,%22Pacotes%22%20:%20%220%22,%22Posicao%22%20:%20%220%22,%22QUERYBASE64%22%20:%20%22S%22,%22METHODTYPE%22%20:%20%22wsmtOpen%22%7D],%22id%22%20:%200%7D: http://127.0.0.1:8084/%7B%22jsonrpc%22%20:%20%222.0%22,%22method%22%20:%20%22QuerySQL%22,%22params%22%20:%20[%220%22,%7B%22SQL%22%20:%20%22select%20*%20from%20cadcidade%22,%22Pacotes%22%20:%20%220%22,%22Posicao%22%20:%20%220%22,%22QUERYBASE64%22%20:%20%22S%22,%22METHODTYPE%22%20:%20%22wsmtOpen%22%7D],%22id%22%20:%200%7D
+08/01/2018 11:52:35	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+08/01/2018 13:27:36	Request header count: 3
+08/01/2018 13:27:36	71: 71
+08/01/2018 13:27:36	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 13:27:36	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 13:27:36	{ "jsonrpc" : "2.0", "method" : "Disponivel", "params" : [], "id" : 0 }
+08/01/2018 13:27:42	Request header count: 3
+08/01/2018 13:27:42	144: 144
+08/01/2018 13:27:42	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 13:27:42	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 13:27:42	{ "jsonrpc" : "2.0", "method" : "QuerySql", "params" : ["0", { "TABLE" : "cadcidade", "FIELDNAME" : "", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+08/01/2018 13:27:50	Request header count: 3
+08/01/2018 13:27:50	193: 193
+08/01/2018 13:27:50	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 13:27:50	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 13:27:50	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }
+08/01/2018 13:29:01	Request header count: 3
+08/01/2018 13:29:01	144: 144
+08/01/2018 13:29:01	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 13:29:01	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 13:29:01	{ "jsonrpc" : "2.0", "method" : "QuerySql", "params" : ["0", { "TABLE" : "cadcidade", "FIELDNAME" : "", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+08/01/2018 13:29:09	Request header count: 3
+08/01/2018 13:29:09	193: 193
+08/01/2018 13:29:09	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 13:29:09	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 13:29:09	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }
+08/01/2018 13:31:24	Request header count: 3
+08/01/2018 13:31:24	270: 270
+08/01/2018 13:31:24	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 13:31:24	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 13:31:24	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%ASSIS SH%" } }], "id" : 0 }
+08/01/2018 13:31:28	Request header count: 3
+08/01/2018 13:31:28	265: 265
+08/01/2018 13:31:28	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 13:31:28	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 13:31:28	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%ASS%" } }], "id" : 0 }
+08/01/2018 13:48:09	Request header count: 3
+08/01/2018 13:48:09	265: 265
+08/01/2018 13:48:09	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 13:48:09	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 13:48:09	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%ASS%" } }], "id" : 0 }
+08/01/2018 13:48:12	Request header count: 3
+08/01/2018 13:48:12	266: 266
+08/01/2018 13:48:12	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 13:48:12	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 13:48:12	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%CACE%" } }], "id" : 0 }
+08/01/2018 14:14:46	Request header count: 3
+08/01/2018 14:14:46	71: 71
+08/01/2018 14:14:46	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 14:14:46	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 14:14:46	{ "jsonrpc" : "2.0", "method" : "Disponivel", "params" : [], "id" : 0 }
+08/01/2018 14:15:02	Request header count: 3
+08/01/2018 14:15:02	172: 172
+08/01/2018 14:15:02	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 14:15:02	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 14:15:02	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }
+08/01/2018 14:16:04	Request header count: 3
+08/01/2018 14:16:04	71: 71
+08/01/2018 14:16:04	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 14:16:04	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 14:16:04	{ "jsonrpc" : "2.0", "method" : "Disponivel", "params" : [], "id" : 0 }
+08/01/2018 14:16:12	Request header count: 3
+08/01/2018 14:16:12	193: 193
+08/01/2018 14:16:12	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 14:16:12	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 14:16:12	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }
+08/01/2018 14:16:12	Request header count: 3
+08/01/2018 14:16:12	193: 193
+08/01/2018 14:16:12	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 14:16:12	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 14:16:12	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }
+08/01/2018 14:16:16	Request header count: 3
+08/01/2018 14:16:16	193: 193
+08/01/2018 14:16:16	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 14:16:16	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 14:16:16	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }
+08/01/2018 14:16:22	Request header count: 3
+08/01/2018 14:16:22	268: 268
+08/01/2018 14:16:22	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 14:16:22	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 14:16:22	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade#LineEnding#where cidade like :cidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen", "Params" : { "cidade" : "%PONTES%" } }], "id" : 0 }
+08/01/2018 14:16:39	Request header count: 3
+08/01/2018 14:16:39	193: 193
+08/01/2018 14:16:39	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 14:16:39	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 14:16:39	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }
+08/01/2018 14:25:31	Get
+08/01/2018 14:25:32	Get
+08/01/2018 14:27:01	Request header count: 3
+08/01/2018 14:27:01	144: 144
+08/01/2018 14:27:01	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 14:27:01	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 14:27:01	{ "jsonrpc" : "2.0", "method" : "QuerySql", "params" : ["0", { "TABLE" : "cadcidade", "FIELDNAME" : "", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+08/01/2018 14:27:35	Request header count: 3
+08/01/2018 14:27:35	193: 193
+08/01/2018 14:27:35	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 14:27:35	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 14:27:35	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }
+08/01/2018 14:27:46	Request header count: 3
+08/01/2018 14:27:46	144: 144
+08/01/2018 14:27:46	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 14:27:46	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 14:27:46	{ "jsonrpc" : "2.0", "method" : "QuerySql", "params" : ["0", { "TABLE" : "cadcidade", "FIELDNAME" : "", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+08/01/2018 14:28:37	Request header count: 3
+08/01/2018 14:28:37	144: 144
+08/01/2018 14:28:37	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 14:28:37	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 14:28:37	{ "jsonrpc" : "2.0", "method" : "QuerySql", "params" : ["0", { "TABLE" : "cadcidade", "FIELDNAME" : "", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+08/01/2018 14:28:56	Request header count: 3
+08/01/2018 14:28:56	193: 193
+08/01/2018 14:28:56	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 14:28:56	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 14:28:56	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }
+08/01/2018 14:28:58	Request header count: 3
+08/01/2018 14:28:58	144: 144
+08/01/2018 14:28:58	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 14:28:58	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 14:28:58	{ "jsonrpc" : "2.0", "method" : "QuerySql", "params" : ["0", { "TABLE" : "cadcidade", "FIELDNAME" : "", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+08/01/2018 14:29:03	Request header count: 3
+08/01/2018 14:29:03	144: 144
+08/01/2018 14:29:03	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 14:29:03	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 14:29:03	{ "jsonrpc" : "2.0", "method" : "QuerySql", "params" : ["0", { "TABLE" : "cadcidade", "FIELDNAME" : "", "METHODTYPE" : "wsmtFind" }], "id" : 0 }
+08/01/2018 14:29:25	Request header count: 3
+08/01/2018 14:29:25	193: 193
+08/01/2018 14:29:25	application/x-www-form-urlencoded: application/x-www-form-urlencoded
+08/01/2018 14:29:25	127.0.0.1:8084: 127.0.0.1:8084
+08/01/2018 14:29:25	{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen" }], "id" : 0 }

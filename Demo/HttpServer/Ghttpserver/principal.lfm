@@ -1,0 +1,38 @@
+object FrmPrincipal: TFrmPrincipal
+  Left = 319
+  Height = 355
+  Top = 129
+  Width = 352
+  Caption = 'FrmPrincipal'
+  ClientHeight = 355
+  ClientWidth = 352
+  LCLVersion = '1.6.4.0'
+  object BitBtn1: TSpeedButton
+    Left = 8
+    Height = 30
+    Top = 13
+    Width = 75
+    Caption = 'Start'
+    GroupIndex = 1
+    OnClick = BitBtn1Click
+  end
+  object BitBtn2: TSpeedButton
+    Left = 88
+    Height = 30
+    Top = 13
+    Width = 75
+    Caption = 'Stop'
+    Down = True
+    GroupIndex = 1
+    OnClick = BitBtn2Click
+  end
+  object TrayIcon1: TTrayIcon
+    PopUpMenu = PopupMenu1
+    left = 192
+    top = 51
+  end
+  object PopupMenu1: TPopupMenu
+    left = 272
+    top = 51
+  end
+end

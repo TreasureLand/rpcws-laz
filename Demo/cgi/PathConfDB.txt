@@ -1,0 +1,5 @@
+IP=127.0.0.1
+PROTOCOLO=Firebird
+BASEDADOS=C:\Gold_Pro\bd_casa_brasilia\GOLD_PRO.FDB
+USUARIO=sysdba
+SENHA=masterkey

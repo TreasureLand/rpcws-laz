@@ -1,0 +1,1 @@
+{ "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S", "METHODTYPE" : "wsmtOpen" }

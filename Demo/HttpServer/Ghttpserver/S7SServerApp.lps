@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="3">
+      <Unit0>
+        <Filename Value="S7SServerApp.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="principal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmPrincipal"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="95"/>
+        <CursorPos X="23" Y="110"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="C:\lazarus\fpc\3.0.2\source\packages\fcl-web\src\base\fphttp.pp"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="206"/>
+        <CursorPos X="17" Y="219"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit2>
+    </Units>
+    <JumpHistory Count="19" HistoryIndex="18">
+      <Position1>
+        <Filename Value="principal.pas"/>
+      </Position1>
+      <Position2>
+        <Filename Value="principal.pas"/>
+        <Caret Line="34" Column="8" TopLine="7"/>
+      </Position2>
+      <Position3>
+        <Filename Value="principal.pas"/>
+        <Caret Line="23" Column="34"/>
+      </Position3>
+      <Position4>
+        <Filename Value="principal.pas"/>
+        <Caret Line="11" Column="4"/>
+      </Position4>
+      <Position5>
+        <Filename Value="principal.pas"/>
+        <Caret Line="9" Column="48"/>
+      </Position5>
+      <Position6>
+        <Filename Value="principal.pas"/>
+        <Caret Line="36" Column="23" TopLine="36"/>
+      </Position6>
+      <Position7>
+        <Filename Value="principal.pas"/>
+        <Caret Line="52" Column="15" TopLine="35"/>
+      </Position7>
+      <Position8>
+        <Filename Value="principal.pas"/>
+        <Caret Line="53" Column="30" TopLine="37"/>
+      </Position8>
+      <Position9>
+        <Filename Value="principal.pas"/>
+        <Caret Line="69" Column="35" TopLine="56"/>
+      </Position9>
+      <Position10>
+        <Filename Value="principal.pas"/>
+        <Caret Line="68" Column="35" TopLine="55"/>
+      </Position10>
+      <Position11>
+        <Filename Value="principal.pas"/>
+        <Caret Line="69" Column="35" TopLine="56"/>
+      </Position11>
+      <Position12>
+        <Filename Value="principal.pas"/>
+        <Caret Line="68" Column="35" TopLine="55"/>
+      </Position12>
+      <Position13>
+        <Filename Value="principal.pas"/>
+        <Caret Line="53" Column="3" TopLine="30"/>
+      </Position13>
+      <Position14>
+        <Filename Value="principal.pas"/>
+        <Caret Line="75" Column="10" TopLine="71"/>
+      </Position14>
+      <Position15>
+        <Filename Value="principal.pas"/>
+        <Caret Line="113" Column="30" TopLine="89"/>
+      </Position15>
+      <Position16>
+        <Filename Value="principal.pas"/>
+        <Caret Line="117" Column="33" TopLine="92"/>
+      </Position16>
+      <Position17>
+        <Filename Value="principal.pas"/>
+        <Caret Line="75" Column="35" TopLine="61"/>
+      </Position17>
+      <Position18>
+        <Filename Value="principal.pas"/>
+        <Caret Line="108" Column="23" TopLine="93"/>
+      </Position18>
+      <Position19>
+        <Filename Value="principal.pas"/>
+        <Caret Line="109" Column="23" TopLine="94"/>
+      </Position19>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>
