@@ -78,6 +78,9 @@
   <CompilerOptions>
     <Version Value="11"/>
     <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="S7SHttpServer"/>
+    </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
       <OtherUnitFiles Value="D:\componenteslazarus\rpcws;D:\componenteslazarus\rpcws\demo\clientquery;..\..\src;..\cgi"/>
@@ -88,6 +91,7 @@
       </Debugging>
     </Linking>
     <Other>
+      <CustomOptions Value="-dUseCThreads"/>
       <OtherDefines Count="1">
         <Define0 Value="UseCThreads"/>
       </OtherDefines>

@@ -7,7 +7,9 @@ uses
 
 begin
   Application.Port:=8084;
-  //Application.Threaded:=True;
+  {$ifdef windows}
+  Application.Threaded:=True;
+  {$endif}
   Application.Initialize;
   Application.Run;
 end.
