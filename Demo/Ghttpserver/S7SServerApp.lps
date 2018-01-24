@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="11">
+      <Unit0>
+        <Filename Value="S7SServerApp.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="50"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="principal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmPrincipal"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="264"/>
+        <CursorPos X="29" Y="285"/>
+        <UsageCount Value="50"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\..\src\servermethods.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="30"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\src\jwsmessages.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="30"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="C:\lazarus\fpc\3.0.2\source\packages\fcl-web\src\base\fphttp.pp"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="206"/>
+        <CursorPos X="17" Y="219"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="C:\lazarus\fpc\3.0.2\source\packages\fcl-web\src\base\fphttpapp.pp"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="13"/>
+        <CursorPos X="3" Y="26"/>
+        <UsageCount Value="14"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="C:\lazarus\lcl\actnlist.pas"/>
+        <UnitName Value="ActnList"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="185"/>
+        <CursorPos X="14" Y="197"/>
+        <UsageCount Value="13"/>
+        <Loaded Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="C:\lazarus\fpc\3.0.2\source\packages\fcl-web\src\base\fpweb.pp"/>
+        <UnitName Value="fpWeb"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="128"/>
+        <CursorPos X="40" Y="144"/>
+        <UsageCount Value="13"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="C:\lazarus\fpc\3.0.2\source\rtl\objpas\classes\classesh.inc"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="1617"/>
+        <CursorPos X="18" Y="1636"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="C:\lazarus\fpc\3.0.2\source\rtl\objpas\classes\dm.inc"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="35"/>
+        <CursorPos X="3" Y="37"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="C:\lazarus\fpc\3.0.2\source\rtl\win\tthread.inc"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="33"/>
+        <CursorPos X="3" Y="48"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit10>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="principal.pas"/>
+        <Caret Line="205" Column="5" TopLine="193"/>
+      </Position1>
+      <Position2>
+        <Filename Value="principal.pas"/>
+        <Caret Line="229" Column="43" TopLine="224"/>
+      </Position2>
+      <Position3>
+        <Filename Value="principal.pas"/>
+        <Caret Line="205" TopLine="192"/>
+      </Position3>
+      <Position4>
+        <Filename Value="principal.pas"/>
+        <Caret Line="229" Column="77" TopLine="216"/>
+      </Position4>
+      <Position5>
+        <Filename Value="principal.pas"/>
+        <Caret Line="228" Column="27" TopLine="218"/>
+      </Position5>
+      <Position6>
+        <Filename Value="principal.pas"/>
+        <Caret Line="260" Column="3" TopLine="258"/>
+      </Position6>
+      <Position7>
+        <Filename Value="principal.pas"/>
+        <Caret Line="205" TopLine="199"/>
+      </Position7>
+      <Position8>
+        <Filename Value="principal.pas"/>
+        <Caret Line="241" TopLine="241"/>
+      </Position8>
+      <Position9>
+        <Filename Value="principal.pas"/>
+        <Caret Line="250" Column="8" TopLine="53"/>
+      </Position9>
+      <Position10>
+        <Filename Value="principal.pas"/>
+        <Caret Line="270" Column="9" TopLine="256"/>
+      </Position10>
+      <Position11>
+        <Filename Value="principal.pas"/>
+        <Caret Line="22" Column="28" TopLine="9"/>
+      </Position11>
+      <Position12>
+        <Filename Value="principal.pas"/>
+        <Caret Line="11" Column="36"/>
+      </Position12>
+      <Position13>
+        <Filename Value="principal.pas"/>
+        <Caret Line="280" Column="35" TopLine="257"/>
+      </Position13>
+      <Position14>
+        <Filename Value="principal.pas"/>
+        <Caret Line="283" Column="2" TopLine="269"/>
+      </Position14>
+      <Position15>
+        <Filename Value="principal.pas"/>
+        <Caret Line="87" Column="3" TopLine="295"/>
+      </Position15>
+      <Position16>
+        <Filename Value="principal.pas"/>
+        <Caret Line="314" Column="10" TopLine="296"/>
+      </Position16>
+      <Position17>
+        <Filename Value="principal.pas"/>
+        <Caret Line="241" Column="35" TopLine="228"/>
+      </Position17>
+      <Position18>
+        <Filename Value="principal.pas"/>
+        <Caret Line="242" Column="20" TopLine="231"/>
+      </Position18>
+      <Position19>
+        <Filename Value="principal.pas"/>
+        <Caret Line="240" Column="6" TopLine="239"/>
+      </Position19>
+      <Position20>
+        <Filename Value="principal.pas"/>
+        <Caret Line="294" Column="34" TopLine="283"/>
+      </Position20>
+      <Position21>
+        <Filename Value="principal.pas"/>
+        <Caret Line="80" Column="34" TopLine="66"/>
+      </Position21>
+      <Position22>
+        <Filename Value="principal.pas"/>
+        <Caret Line="314" Column="53" TopLine="290"/>
+      </Position22>
+      <Position23>
+        <Filename Value="principal.pas"/>
+        <Caret Line="304" Column="33" TopLine="225"/>
+      </Position23>
+      <Position24>
+        <Filename Value="C:\lazarus\fpc\3.0.2\source\rtl\objpas\classes\classesh.inc"/>
+        <Caret Line="1717" Column="21" TopLine="1705"/>
+      </Position24>
+      <Position25>
+        <Filename Value="principal.pas"/>
+        <Caret Line="225" TopLine="220"/>
+      </Position25>
+      <Position26>
+        <Filename Value="principal.pas"/>
+        <Caret Line="237" Column="5" TopLine="212"/>
+      </Position26>
+      <Position27>
+        <Filename Value="principal.pas"/>
+        <Caret Line="286" Column="15" TopLine="217"/>
+      </Position27>
+      <Position28>
+        <Filename Value="principal.pas"/>
+        <Caret Line="225" TopLine="217"/>
+      </Position28>
+      <Position29>
+        <Filename Value="principal.pas"/>
+        <Caret Line="226" TopLine="217"/>
+      </Position29>
+      <Position30>
+        <Filename Value="principal.pas"/>
+        <Caret Line="227" TopLine="217"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>
