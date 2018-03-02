@@ -5,7 +5,7 @@ unit s7stypes;
 interface
 
 uses
-  Classes, SysUtils,db,RUtils,BufDataset,fpjson,jsonparser,s7sutils;
+  Classes, SysUtils,db,RUtils,BufDataset,fpjson,jsonparser,s7sutils, zstream, base64;
 
 type
   TDBProtocol = (dbFirebird,dbPostGresql,dbMySql,dbSqLite);
@@ -31,7 +31,7 @@ function StrToMethodType(const AMethodType: String): TWSMethodType;
 begin
   case AMethodType of
     'wsmtOpen':Result:= wsmtOpen;
-    'wsmtExceSQL':Result:= wsmtExecSQL;
+    'wsmtExecSQL':Result:= wsmtExecSQL;
     'wsmtFind':Result:= wsmtFind;
     'wsmtApplyUpdate':Result:= wsmtApplyUpdate;
     else raise Exception.CreateFmt('MethodType inválido: "%s"', [AMethodType]);
@@ -132,12 +132,12 @@ begin
   try
     ABlob:= False;
     if (AJSONItem is TJSONFloatNumber) then
-      AParam.Asfloat := AJSONItem.Asfloat;
-    if (AJSONItem is TJSONIntegerNumber) then
-      AParam.AsInteger := AJSONItem.Asinteger;
-    if (AJSONItem is TJSONInt64Number) then
-      AParam.AsLargeInt := AJSONItem.AsInt64;
-    if (AJSONItem is TJSONString) then
+      AParam.Asfloat := AJSONItem.Asfloat
+    else if (AJSONItem is TJSONIntegerNumber) then
+      AParam.AsInteger := AJSONItem.Asinteger
+    else if (AJSONItem is TJSONInt64Number) then
+      AParam.AsLargeInt := AJSONItem.AsInt64
+    else if (AJSONItem is TJSONString) then
     begin
       if copy(AJSONItem.AsString ,1,8) = '#base64#' then
       begin
@@ -149,13 +149,21 @@ begin
         f.Position:=0;
         AParam.LoadFromStream(F,ftblob);
       end
+      else if copy(AJSONItem.AsString ,1,10) = '#nulldate#' then
+      begin
+        AParam.Clear;
+      end
       else
       begin
         AParam.AsString := StringReplace(AJSONItem.AsString,'#LineEnding#',#13#10,[rfReplaceAll, rfIgnoreCase]);
       end;
-    end;
-    if (AJSONItem is TJSONBoolean) then
-      AParam.AsBoolean := AJSONItem.AsBoolean;
+    end
+    else if (AJSONItem is TJSONBoolean) then
+      AParam.AsBoolean := AJSONItem.AsBoolean
+    else if (AJSONItem is TJSONNull) then
+      AParam.Clear
+    else   //se não for niguem aí de riba
+      AParam.AsString := AJSONItem.AsString;
   finally
     if ABlob then
       FreeAndNil(F);

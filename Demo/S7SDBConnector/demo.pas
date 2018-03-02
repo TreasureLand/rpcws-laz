@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, sqldb, IBConnection, BufDataset, db, FileUtil, Forms,
   Controls, Graphics, Dialogs, DBGrids, StdCtrls, s7sConn, s7sdbjson, fpjson,
-  jsonparser,jsonscanner;
+  jsonparser,jsonscanner, S7SProvider;
 
 type
 
@@ -97,7 +97,7 @@ const json : string = '{"METHODTYPE" : "wsmtFind", '+
                       '{"codpessoa" : "101"}}';
 var
   FrmDemo: TFrmDemo;
-  S7SProvider  : TS7SProvider;
+  S7SProvider1  : TS7SProvider;
   S7SProvider2 : TS7SProvider;
   DBConnector  : TS7SDBConnector;         //996448508
 implementation
@@ -112,10 +112,10 @@ var jsonresult: string;
 begin
   ALstJson := TStringList.Create;
   ALstJson.LoadFromFile('LogJson.txt');
-  DBConnector := TS7SDBConnector.create('');
-  S7SProvider:= TS7SProvider.create(DBConnector);
-  S7SProvider.TableName:='pessoas';
-  jsonresult:= S7SProvider.Execute(ALstJson.Text);
+  DBConnector := TS7SDBConnector.create('C:\horus\PathConfDB.txt');
+  S7SProvider1:= TS7SProvider.create(DBConnector);
+  S7SProvider1.TableName:='pessoas';
+  jsonresult:= S7SProvider1.Execute(ALstJson.Text);
 end;
 
 procedure TFrmDemo.Button2Click(Sender: TObject);

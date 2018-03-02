@@ -1,0 +1,1 @@
+{ "jsonrpc" : "2.0", "error" : { "code" : -32000, "message" : "TMySQL56Connection : Error executing query: Table 'siscomlaz.trans' doesn't exist" }, "id" : 0 }

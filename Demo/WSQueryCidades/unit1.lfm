@@ -1,217 +1,36 @@
 object Form1: TForm1
-  Left = 493
-  Height = 428
-  Top = 207
-  Width = 651
+  Left = 582
+  Height = 395
+  Top = 198
+  Width = 602
   Caption = 'Form1'
-  ClientHeight = 428
-  ClientWidth = 651
+  ClientHeight = 395
+  ClientWidth = 602
   LCLVersion = '1.6.4.0'
-  object elocCidade: TEdit
-    Left = 24
-    Height = 28
-    Top = 48
-    Width = 528
-    OnKeyPress = elocCidadeKeyPress
-    TabOrder = 0
-    Text = 'elocCidade'
-  end
-  object Label1: TLabel
-    Left = 24
-    Height = 20
-    Top = 24
-    Width = 47
-    Caption = 'Cidade'
-    ParentColor = False
-  end
-  object DBGrid1: TDBGrid
-    Left = 24
-    Height = 300
-    Top = 88
-    Width = 528
-    Color = clWindow
-    Columns = <    
-      item
-        Title.Caption = 'ID'
-        FieldName = 'ID'
-      end    
-      item
-        Title.Caption = 'CIDADE'
-        Width = 350
-        FieldName = 'CIDADE'
-      end>
-    DataSource = DataSource1
-    TabOrder = 1
-  end
-  object Label2: TLabel
-    Left = 24
-    Height = 20
-    Top = 392
-    Width = 44
-    Caption = 'Label2'
-    ParentColor = False
-  end
   object Button1: TButton
-    Left = 88
-    Height = 33
-    Top = 7
-    Width = 184
-    Caption = 'Wsclient Methods MemDs'
-    OnClick = Button1Click
-    TabOrder = 2
-  end
-  object CheckBox1: TCheckBox
-    Left = 492
-    Height = 24
-    Top = 16
+    Left = 184
+    Height = 25
+    Top = 224
     Width = 75
-    Caption = 'Base 64'
-    TabOrder = 3
-  end
-  object Button2: TButton
-    Left = 280
-    Height = 33
-    Top = 7
-    Width = 200
-    Caption = 'Wsclient Methods Buf'
-    OnClick = Button2Click
-    TabOrder = 4
-  end
-  object DataSource1: TDataSource
-    DataSet = WSQuery1
-    left = 312
-    top = 152
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 0
   end
   object WSConnector1: TWSConnector
-    Connected = True
+    Connected = False
     WSServer.HostName = '127.0.0.1'
     WSServer.Port = '8084'
-    left = 112
-    top = 152
+    AutoCommit = False
+    left = 83
+    top = 64
   end
   object WSQuery1: TWSQuery
-    IndexName = 'DEFAULT_ORDER'
-    FieldDefs = <    
-      item
-        Name = 'ID'
-        DataType = ftLargeint
-        Precision = -1
-      end    
-      item
-        Name = 'CIDADE'
-        DataType = ftString
-        Precision = -1
-        Size = 60
-      end    
-      item
-        Name = 'CODIBGE'
-        DataType = ftString
-        Precision = -1
-        Size = 7
-      end    
-      item
-        Name = 'UF'
-        DataType = ftString
-        Precision = -1
-        Size = 2
-      end    
-      item
-        Name = 'ATIVO'
-        DataType = ftString
-        Precision = -1
-        Size = 1
-      end>
+    FieldDefs = <>
     DadosEmPacotes = True
     Pacotes = 0
     params = <>
-    QueryBase64 = False
-    WSConnetor = WSConnector1
-    SQL.Strings = (
-      'select * from cadcidade'
-    )
-    left = 208
-    top = 152
-    object WSQuery1TSTE1: TWideStringField
-      FieldKind = fkCalculated
-      FieldName = 'TSTE'
-      Index = 0
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = False
-      Size = 444
-    end
-    object WSQuery1ID: TLargeintField
-      FieldKind = fkData
-      FieldName = 'ID'
-      Index = 1
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = False
-    end
-    object WSQuery1CIDADE: TStringField
-      FieldKind = fkData
-      FieldName = 'CIDADE'
-      Index = 2
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = False
-      Size = 60
-    end
-    object WSQuery1CODIBGE: TStringField
-      FieldKind = fkData
-      FieldName = 'CODIBGE'
-      Index = 3
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = False
-      Size = 7
-    end
-    object WSQuery1UF: TStringField
-      FieldKind = fkData
-      FieldName = 'UF'
-      Index = 4
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = False
-      Size = 2
-    end
-    object WSQuery1ATIVO: TStringField
-      FieldKind = fkData
-      FieldName = 'ATIVO'
-      Index = 5
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = False
-      Size = 1
-    end
-  end
-  object WSClientDataset1: TWSClientDataset
-    FieldDefs = <>
-    DadosEmPacotes = False
-    Pacotes = 0
-    params = <>
     QueryBase64 = True
-    WSConnetor = WSConnector1
-    SQL.Strings = (
-      'select * from conta'
-    )
-    left = 432
-    top = 152
-  end
-  object MemDataset1: TMemDataset
-    FieldDefs = <>
-    left = 169
-    top = 236
-  end
-  object BufDataset1: TBufDataset
-    FieldDefs = <>
-    left = 304
-    top = 236
+    left = 181
+    top = 71
   end
 end

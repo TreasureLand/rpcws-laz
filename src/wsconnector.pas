@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, fpjson, jsonparser, jsonscanner, LResources, Forms,
-  Controls, Graphics, Dialogs, jwsclient, RUtils;
+  Controls, Graphics, Dialogs, jwsclient, RUtils, WSTransaction;
 
 type      
 
@@ -16,9 +16,9 @@ type
 
   TWSServer = class(TPersistent)
   private
-    FHostName : String;
-    FPort     : String;
-    FPathCGI  : String;
+    FHostName   : String;
+    FPort       : String;
+    FPathCGI    : String;
     procedure SetHostName(AValue: String);
     procedure SetPathCGI(AValue: String);
     procedure SetPort(AValue: String);
@@ -38,32 +38,39 @@ type
     constructor Create(aOwner: TComponent); override;
     destructor Destroy; override;//tem q ter o override
   private
-    FWSServer     : TWSServer;
-    FJWSClient    : TJWSClient;
-    FConnected    : Boolean;
-    FHost         : String;
-    FResponseTime : String;
-    procedure SetConnected(AValue : Boolean);
-  protected
-    procedure Loaded; override;
-  public
+    FWSServer       : TWSServer;
+    FJWSClient      : TJWSClient;
+    FConnected      : Boolean;
+    FHost           : String;
+    FResponseTime   : String;
+    FAutoCommit     : Boolean;
+    FWSTransaction : TWSTransaction;
+
   private
     Function DoConnect:Boolean;
+    function CalcResponseTime(AMilliseconds: LongWord): String;
+    procedure SetConnected(AValue : Boolean);
     procedure SetResponseTime(AValue: String);
     procedure SetWSServer(AValue: TWSServer);
-    function CalcResponseTime(AMilliseconds: LongWord): String;
+    procedure SetWSTransaction(AValue: TWSTransaction);
+  protected
+    procedure Loaded; override;
   public
     function CheckResult(AJresult: TJSONObject): TJSONData; overload;
     function CheckResult(const AJresult: String): string; overload;
   published
     Property Connected    : Boolean      read FConnected    write SetConnected;
     property WSServer     : TWSServer    read FWSServer     write SetWSServer;
+    property AutoCommit   : Boolean      read FAutoCommit   write FAutoCommit;
   public
-    Function StrCall(AMethod: string; Args: array of variant; AID: integer): string;
-    Function JSONCall(AMethod: string; Args: array of variant; AID: integer): TJSONObject;
+    Function StrCall(const AMethodModule, AMethodName: string; const Args: array of variant; AID: integer): string;
+    Function JSONCall(const AMethodModule, AMethodName: string; const Args: array of variant; AID: integer): TJSONObject;
+    Function JSONCall(const AMethodName: string; const Args: array of variant; AID: integer): TJSONObject;
+    function Commit: Boolean;
     function GetPacotes:Integer;
-    property JWSClient    : TJWSClient   read FJWSClient;
-    property ResponseTime : String read FResponseTime write SetResponseTime;
+    property JWSClient     : TJWSClient      read FJWSClient;
+    property ResponseTime  : String          read FResponseTime  write SetResponseTime;
+    property WSTransaction : TWSTransaction  read FWSTransaction write SetWSTransaction;
   end;
 
 procedure Register;
@@ -112,14 +119,17 @@ end;
 constructor TWSConnector.Create(aOwner : TComponent);
 begin
   inherited Create(aOwner);
-  FWSServer   := TWSServer.Create;
-  FJWSClient  := TJWSClient.Create;//(self);
+  FWSServer      := TWSServer.Create;
+  FJWSClient     := TJWSClient.Create;//(self);
+  FWSTransaction := TWSTransaction.Create;//(Self);
+  //FWSTransaction. := TStringList.Create;
 end;
 
 destructor TWSConnector.Destroy;
 begin
   FWSServer.Free;
   FJWSClient.Free;
+  FWSTransaction.Free;
   inherited Destroy;
 end;
 
@@ -147,7 +157,7 @@ function TWSConnector.DoConnect: Boolean;
 var  vResult     : TJSONObject;
      vVDataItem  : TJSONData;
 begin
-  vResult  := JSONCall('Disponivel',[],0);
+  vResult  := JSONCall('', 'Disponivel',[],0);
   try
     vVDataItem := vResult.Items[0];
     Result := (vVDataItem.AsString = 'OK');
@@ -198,34 +208,47 @@ begin
   end;
 end;
 
-function TWSConnector.StrCall(AMethod: string; Args: array of variant;
+function TWSConnector.Commit: Boolean;
+begin
+  if not FAutoCommit then
+  begin
+    JsonCall('', 'Transaction',['0',Self.WSTransaction.GetListCmd,True],0);
+  end;
+end;
+
+function TWSConnector.StrCall(const AMethodModule, AMethodName: string; const Args: array of variant;
   AID: integer): string;
   Var TimeIni, TimeFim : LongWord;
 begin
-
   TimeIni := GetTickCount;
   if WSServer.FPathCGI <> '' then FHost:= 'http://'+WSServer.HostName+':'+WSServer.FPort+WSServer.FPathCGI
-  else FHost:= 'http://'+WSServer.HostName+':'+WSServer.FPort;
+  else FHost:= 'http://'+WSServer.HostName+':'+WSServer.FPort+'/methods';
   JWSClient.Host := FHost;
-  Result         := JWSClient.Call(AMethod,Args,AID);
+  Result         := JWSClient.Call(AMethodModule, AMethodName, Args,AID);
   Result         := CheckResult(Result);
   TimeFim        := GetTickCount;
   FResponseTime  := CalcResponseTime(TimeFim - TimeIni);
 end;
 
-function TWSConnector.JSONCall(AMethod: string; Args: array of variant;
+function TWSConnector.JSONCall(const AMethodModule, AMethodName: string; const Args: array of variant;
   AID: integer): TJSONObject;
 var
   s: String;
 begin
   //Result := (TJSONParser.Create(StrCall(AMethod,Args,AID), [joUTF8]).Parse as TJSONObject); //aki tem uma instancia q não é destruida
-  s := StrCall(AMethod,Args,AID);
+  s := StrCall(AMethodModule, AMethodName,Args,AID);
   with TJSONParser.Create(s, [joUTF8]) do
   try
     Result := Parse as TJSONObject;
   finally
     Free;
   end;
+end;
+
+function TWSConnector.JSONCall(const AMethodName: string; const Args: array of variant;
+  AID: integer): TJSONObject;
+begin
+  Result := JSONCall('', AMethodName, Args, AID);
 end;
 
 function TWSConnector.CalcResponseTime(AMilliseconds: LongWord): String;
@@ -236,6 +259,12 @@ begin
   Min    := Sec div 60;
   Sec    := Sec mod 60;
   Result := IntToStr(Min)+':'+ IntTostr(Sec)+':'+IntToStr(Mil)+'ms';
+end;
+
+procedure TWSConnector.SetWSTransaction(AValue: TWSTransaction);
+begin
+  if FWSTransaction=AValue then Exit;
+  FWSTransaction:=AValue;
 end;
 
 end.

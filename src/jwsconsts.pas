@@ -26,6 +26,8 @@ const
   ERR_INVALID_CONTENT     = -32602;
 
   ERR_INVALID_QUERY       = -32300;
+  JSON_RESULT_OK          = '{"result":"OK"}';
+  JSON_RESULT_NO          = '{"result":"NO"}';
 
 implementation
 

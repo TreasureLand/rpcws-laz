@@ -13,23 +13,47 @@ interface
 {$M+}
 
 uses
-  Classes, SysUtils, variants, jwstypes, fpjson, jsonparser;
+  Classes, SysUtils, fgl, variants, strutils, jwstypes, fpjson, jsonparser,
+  Helper.Exceptions;
 
 type
 
-  TFuncType = function(Request: TJWSRequestContent): TJSONStringType of object;
+  TFuncType = function(): TJSONStringType of object;
 
   { TJWSServerMethods }
 
   TJWSServerMethods = class
   private
-    procedure Call(Request: TJWSRequestContent; var Response: TJWSResponseContent);
+    FRequest: TJWSRequestContent;
+    procedure Call(var Response: TJWSResponseContent);
+  public
+    constructor Create(aRequest: TJWSRequestContent);
+    destructor Destroy; override;
+  public
+    property Request: TJWSRequestContent read FRequest;
+    procedure ProcessRequest(var Response: TJWSResponseContent);
+  published
+
+  end;
+
+  TJWSServerMethodsClass = class of TJWSServerMethods;
+
+  { TJWSServerMethodsModules }
+
+  TJWSServerMethodsModules = class
   public
     constructor Create;
     destructor Destroy; override;
-    procedure ProcessRequest(ARequest: TJWSRequestContent; var Response: TJWSResponseContent);
-  published
-
+  private
+    type
+      TMapModules = specialize TFPGMap<string, TJWSServerMethodsClass>;
+  private
+    class var FModules: TMapModules;
+  public
+    class procedure RegisterClassModule(const aName: string; aClassModule: TJWSServerMethodsClass);overload;
+    class procedure RegisterClassModule(aClassModule: TJWSServerMethodsClass); overload;
+    class function GetClassModule(const aName: string): TJWSServerMethodsClass; overload;
+    class function GetClassMethod(ARequest: TJWSRequestContent): TJWSServerMethodsClass; overload;
   end;
 
   function IsSelect(ASQL: string): Boolean;
@@ -42,9 +66,10 @@ uses
 
 { TJWSServerMethods }
 
-constructor TJWSServerMethods.Create;
+constructor TJWSServerMethods.Create(aRequest: TJWSRequestContent);
 begin
-
+  inherited Create;
+  FRequest := aRequest;
 end;
 
 destructor TJWSServerMethods.Destroy;
@@ -52,7 +77,7 @@ begin
   inherited Destroy;
 end;
 
-procedure TJWSServerMethods.Call(Request: TJWSRequestContent;
+procedure TJWSServerMethods.Call(//Request: TJWSRequestContent;
     var Response: TJWSResponseContent);
 var
   m: TMethod;
@@ -64,7 +89,7 @@ begin
     if assigned(m.Code) then
     begin
       m.Data := pointer(Self); //store pointer to object instance
-      sResult := TFuncType(m)(Request);
+      sResult := TFuncType(m)();//(Request);
       //addlog(sResult);
       if IsJSON(sResult) then
       begin
@@ -106,11 +131,11 @@ begin
   end;
 end;
 
-procedure TJWSServerMethods.ProcessRequest(ARequest: TJWSRequestContent; var Response: TJWSResponseContent);
+procedure TJWSServerMethods.ProcessRequest({ARequest: TJWSRequestContent; }var Response: TJWSResponseContent);
 begin
   try
-    if ARequest <> nil then
-      Call(ARequest, Response)
+    if Request <> nil then
+      Call(Response)
     else
     begin
       if assigned(Response) then
@@ -133,7 +158,6 @@ begin
   end;
 end;
 
-
 function IsSelect(ASQL: string): boolean;
 begin
   result := (pos('SELECT',UpperCase(ASQL)) > 0);
@@ -144,5 +168,55 @@ begin
   result := (pos('WHERE',UpperCase(ASQL)) > 0);
 end;
 
+{ TJWSServerMethodsModules }
+
+constructor TJWSServerMethodsModules.Create;
+begin
+   inherited Create;
+   FModules           := TMapModules.Create;
+   FModules.Sorted    := True;
+   FModules.Duplicates:=dupError;
+end;
+
+destructor TJWSServerMethodsModules.Destroy;
+begin
+  FModules.Free;
+  inherited Destroy;
+end;
+
+class procedure TJWSServerMethodsModules.RegisterClassModule(const aName: string;
+  aClassModule: TJWSServerMethodsClass);
+begin
+  try
+     FModules.Add(aName.ToUpper(), aClassModule);
+  except
+    raise EExceptExcept.CreateFmt('Erro registrando módulo(%s), Nome: %s, Classe: %s',
+                        [ClassName, aName, aClassModule.ClassName]);
+  end;
+end;
+
+class procedure TJWSServerMethodsModules.RegisterClassModule(aClassModule: TJWSServerMethodsClass);
+var
+  s: String;
+begin
+  s := aClassModule.ClassName;
+  if AnsiStartsText('TJWSServerMethods', s) then
+     Delete(s, 1, 17);
+
+  RegisterClassModule(s, aClassModule);
+end;
+
+class function TJWSServerMethodsModules.GetClassModule(const aName: string): TJWSServerMethodsClass;
+begin
+  if not FModules.TryGetData(aName.ToUpper(), Result) then
+     Result := nil;
+end;
+
+class function TJWSServerMethodsModules.GetClassMethod(ARequest: TJWSRequestContent): TJWSServerMethodsClass;
+begin
+  Result := GetClassModule(ARequest.Module);
+end;
+
 end.
+
 

@@ -13,6 +13,8 @@ type
   { TFPWebModule1 }
 
   TFPWebModule1 = class(TFPWebModule)
+    procedure acaoRequest(Sender: TObject; ARequest: TRequest;
+      AResponse: TResponse; var Handled: Boolean);
     procedure FPWebActionRequestRequest(Sender: TObject; ARequest: TRequest;
       AResponse: TResponse; var Handled: Boolean);
   private
@@ -35,12 +37,15 @@ procedure ParseRequest(var ARequest: TJWSRequestContent;
   AJSONString: TJSONStringType);
 var
   parser: TJSONParser;
+  lResult: TStringList;
 begin
+  lResult:= TStringList.Create;
   parser := TJSONParser.Create(AJSONString);
   try
+    lResult.Add(AJSONString);
+    lResult.SaveToFile('ParseRequest.txt');
     try
       ARequest := TJWSRequestContent(parser.Parse as TJSONObject);
-
     except on e:exception do
       begin
         ARequest := nil;
@@ -48,6 +53,8 @@ begin
       end;
     end;
   finally
+    lResult.Free;
+    lResult:= nil;
     parser.free;
     parser := nil;
   end;
@@ -65,11 +72,19 @@ end;
 procedure OnJWSRequest(Sender: TObject; const ARequest: TJWSRequestContent; var AResponse: TJWSResponseContent);
 begin
   try
-    ReqMethods := TJWSMethods.Create;
+    ReqMethods := TJWSMethods.Create();
     ReqMethods.ProcessRequest(ARequest, AResponse);
   finally
     freeandnil(ReqMethods);
   end;
+end;
+
+procedure TFPWebModule1.acaoRequest(Sender: TObject; ARequest: TRequest;
+  AResponse: TResponse; var Handled: Boolean);
+begin
+  AResponse.ContentType:='text/html';
+  AResponse.SendRedirect('/files/teste.html');
+  Handled:=True;
 end;
 
 procedure TFPWebModule1.FPWebActionRequestRequest(Sender: TObject;
@@ -123,8 +138,9 @@ begin
   WriteLn('');
 
 end;
-
+{
 initialization
   RegisterHTTPModule('TFPWebModule1', TFPWebModule1);
+  }
 end.
 

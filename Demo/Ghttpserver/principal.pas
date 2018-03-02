@@ -8,7 +8,7 @@ uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, Buttons,
   ExtCtrls, Menus, StdCtrls, ActnList, httpdefs, fpHTTP, fpWeb, fpwebfile,
   fphttpapp, jwsconsts, jwsmessages, jwstypes, WSConnector, fpjson, jsonparser,
-  jwsmethods, strutils,fphttpserver
+  jwsmethods, fphttpserver, custweb, fpmimetypes, websession
   {$IFDEF UNIX}{$IFDEF UseCThreads}
     ,cthreads
   {$ENDIF}{$ENDIF};
@@ -23,6 +23,9 @@ type
   private
     //app: THTTPApplication;
     app: TFPHTTPServer;
+    fMsg: string;
+    procedure DoSyncMessage();
+    procedure SyncMessage(const s: string);
   public
     constructor Create(CreateSuspended: Boolean; const StackSize: SizeUInt=DefaultStackSize
       );
@@ -51,6 +54,7 @@ type
     PopupMenu1: TPopupMenu;
     Timer1: TTimer;
     TrayIcon1: TTrayIcon;
+    WSConnector1: TWSConnector;
     procedure actAbrirExecute(Sender: TObject);
     procedure actFecharExecute(Sender: TObject);
     procedure actIniciarExecute(Sender: TObject);
@@ -60,56 +64,56 @@ type
     procedure Timer1Timer(Sender: TObject);
   private
     { private declarations }
+    Fporta: Integer;
+    FGravarLog: Boolean;
   public
     { public declarations }
+  published
+    property Porta     : Integer read FPorta     write FPorta;
+    property GravarLog : Boolean read FGravarLog write FGravarLog;
   end;
 
-  { TFPWebModule1 }
+  { TFPWebModule }
 
   TFPWebM = class(TFPWebModule)
+  private
     acao : TFpWebAction;
-    FPWebActionRequest : TFpWebAction;
-    procedure FPWebActionRequestRequest(Sender: TObject; ARequest: TRequest;
-      AResponse: TResponse; var Handled: Boolean);
-    procedure testeRequest(Sender: TObject; ARequest: TRequest;
+    ActionMethods : TFpWebAction;
+    procedure ActionMethodsRequest(Sender: TObject; ARequest: TRequest;
       AResponse: TResponse; var Handled: Boolean);
   private
     { private declarations }
+    FADDLogFile : Boolean;
   public
     { public declarations }
     constructor createnew(AOwner:TComponent;createmode:Integer); override;
     destructor Destroy; override;
+  published
+    property ADDLogFile : boolean Read FADDLogFile write FADDLogFile;
   end;
 
 var
   FrmPrincipal: TFrmPrincipal;
   ReqMethods: TJWSMethods;
   aThred: TThred;
-  aFPWebM: TFPWebM;
+  FHandler: TWebHandler;//TFPWebM;
 implementation
 
 {$R *.lfm}
 
 { TFPWebM }
 
-procedure TFPWebM.testeRequest(Sender: TObject; ARequest: TRequest;
-  AResponse: TResponse; var Handled: Boolean);
-begin
-   aresponse.content := 'acao executada';
-   handled := true
-end;
-
 constructor TFPWebM.createnew(AOwner: TComponent; createmode: Integer);
 begin
   Inherited;
+  CreateSession:= True;
+  FADDLogFile:= False;
   acao := TFpWebAction.create(actions);
   Acao.name:= 'acao';
-  FPWebActionRequest:= TFpWebAction.create(actions);
-  FPWebActionRequest.Name:='FPWebActionRequest';
-  FPWebActionRequest.Default:=True;
-  FPWebActionRequest.OnRequest:= @FPWebActionRequestRequest;
-  //Acao.Default:=True;
-  acao.OnRequest:=@testeRequest;
+  ActionMethods:= TFpWebAction.create(actions);
+  ActionMethods.Name:='Methods';
+  ActionMethods.Default:=True;
+  ActionMethods.OnRequest:= @ActionMethodsRequest;
 end;
 
 destructor TFPWebM.Destroy;
@@ -128,8 +132,8 @@ begin
   try
     try
       ARequest := TJWSRequestContent(parser.Parse as TJSONObject);
-
-    except on e:exception do
+    except on
+      e:exception do
       begin
         ARequest := nil;
         raise exception.create('ParseRequest '+ e.message);
@@ -160,57 +164,75 @@ begin
   end;
 end;
 
-procedure TFPWebM.FPWebActionRequestRequest(Sender: TObject;
+procedure TFPWebM.ActionMethodsRequest(Sender: TObject;
   ARequest: TRequest; AResponse: TResponse; var Handled: Boolean);
 var
   jwsRequest: TJWSRequestContent;
   jwsResponse: TJWSResponseContent;
   i, iID: integer;
 begin
-
-  FrmPrincipal.MLog.Lines.Add(Format('Cliente "%s" Data/Hora: %s  Requisicao: %s', [ARequest.RemoteAddr,formatdatetime('dd/mm/yyyy hh:mm:ss:zzz',now),ARequest.QueryFields.Values['QUERY']]));
+  //writeln('TFPWebM.FPWebActionRequestRequest ');
+  //aThred.SyncMessage('URL '+ARequest.URL);
+  aThred.SyncMessage(Format('Cliente "%s" Data/Hora %s Requisicao', [ARequest.RemoteAddr,formatdatetime('dd/mm/yyyy hh:mm:ss:zzz',now),ARequest.QueryFields.Values['QUERY']]));
   Handled := true;
   jwsRequest   := nil;
   jwsResponse  := nil;
 
-  if ARequest.Method = 'GET' then
+  if ARequest.Method <> 'POST' then
   begin
-    addlog('Get');
+    if FADDLogFile then
+      addlog('Get');
     AResponse.Content := MSG_GETRESPONSE;
-    exit;
-  end;
-  try
+    handled := true;
+  end
+  else
+  begin
     try
-      addlog('Request header count: '+ inttostr(ARequest.FieldCount));
-      for i := 0 to ARequest.FieldCount -1 do
-        addlog(ARequest.FieldValues[i] + ': '+ ARequest.FieldValues[i]);
-      addlog(ARequest.Content);
-      ParseRequest(jwsRequest, ARequest.Content);
-      if jwsRequest <> nil then iID := jwsRequest.ID
-      else iID := -1;
-      OnJWSRequest(Sender,jwsRequest,jwsResponse);
-      if not assigned(jwsResponse) then
-        jwsResponse := JSONRPCResult(TJSONString.create(MSG_NO_RESPONSE),jwsRequest.ID);
-    except on e:exception do
-        jwsResponse := JSONRPCError(ERR_REQUEST_ERROR,ERROR_REQUEST_ERROR + '('+ e.message + ')',iID);
+      try
+        if FADDLogFile then
+        begin
+          addlog('Request header count: '+ inttostr(ARequest.FieldCount));
+          for i := 0 to ARequest.FieldCount -1 do
+            addlog(ARequest.FieldValues[i] + ': '+ ARequest.FieldValues[i]);
+          addlog(ARequest.Content);
+        end;
+        ParseRequest(jwsRequest, ARequest.Content);
+        if jwsRequest <> nil then iID := jwsRequest.ID
+        else iID := -1;
+        OnJWSRequest(Sender,jwsRequest,jwsResponse);
+        if not assigned(jwsResponse) then
+          jwsResponse := JSONRPCResult(TJSONString.create(MSG_NO_RESPONSE),jwsRequest.ID);
+      except on e:exception do
+          jwsResponse := JSONRPCError(ERR_REQUEST_ERROR,ERROR_REQUEST_ERROR + '('+ e.message + ')',iID);
+      end;
+    finally
+      AResponse.content := jwsResponse.AsJSON;
+      jwsRequest.free;
+      jwsRequest := nil;
+      jwsResponse.free;
+      jwsResponse := nil;
     end;
-  finally
-    AResponse.content := jwsResponse.AsJSON;
-    jwsRequest.free;
-    jwsRequest := nil;
-    jwsResponse.free;
-    jwsResponse := nil;
   end;
-  FrmPrincipal.MLog.Lines.Add(Format('Cliente "%s" Data/Hora da Resposta: %s ', [ARequest.RemoteAddr,formatdatetime('dd/mm/yyyy hh:mm:ss:zzz',now)]));
+  aThred.SyncMessage(Format('Cliente "%s" Data/Hora %s Resposta', [ARequest.RemoteAddr,formatdatetime('dd/mm/yyyy hh:mm:ss:zzz',now)]));
 end;
 
 
 { Thred }
 
+procedure TThred.DoSyncMessage;
+begin
+  FrmPrincipal.MLog.Lines.Add(fMsg);
+end;
+
+procedure TThred.SyncMessage(const s: string);
+begin
+  fMsg:=s;
+  Synchronize(@DoSyncMessage);
+end;
+
 constructor TThred.Create(CreateSuspended: Boolean; const StackSize: SizeUInt);
 begin
   Inherited Create(CreateSuspended);
-  //app:= THTTPApplication.Create(nil);
   app:= TFPHTTPServer.create(nil);
   {$IFDEF WINDOWS}
     app.Threaded:=True;
@@ -234,13 +256,7 @@ end;
 
 procedure TThred.Execute;
 begin
-  //try
-    aFPWebM:= TFPWebM.createnew(nil,1);
-    app.Active:=True;
-  //finally
-  //  FreeAndNil(app);
-  //  FreeAndNil(aFPWebM);
-  //end;
+  app.Active:=True;
 end;
 
 procedure TThred.DoHandleRequest(Sender: TObject;
@@ -249,7 +265,9 @@ var AResponse: TFPHTTPConnectionResponse);
 begin
   //FURL:=Arequest.URL;
   //app.Synchronize(@ShowURL);
-  aFPWebM.HandleRequest(ARequest,AResponse);
+  //SyncMessage('URL 'ARequest.URL);
+  FHandler.HandleRequest(ARequest,AResponse);
+  //rou
 end;
 
 { TFrmPrincipal }
@@ -294,6 +312,10 @@ end;
 procedure TFrmPrincipal.FormCreate(Sender: TObject);
 begin
   MLog.Lines.Clear;
+  FHandler := TWebHandler.Create(Self);
+  //FHandler.ADDLogFile:=true;
+  RegisterHTTPModule('', TFPWebM, True);
+  //RegisterHTTPModule('methods', TFPWebM, True);
   if UpperCase(ParamStr(1)) = '-INICIAR' then
   begin
     Timer1.Enabled:=True;
@@ -323,8 +345,6 @@ begin
 end;
 
 initialization
-  //RegisterHTTPModule(TFPWebM, True);
-  //RegisterHTTPModule(TFPWebM, TFPWebModule, True);
 
 end.
 

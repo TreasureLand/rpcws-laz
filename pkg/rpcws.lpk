@@ -8,11 +8,11 @@
       <Version Value="11"/>
       <PathDelim Value="\"/>
       <SearchPaths>
-        <OtherUnitFiles Value="..\src"/>
+        <OtherUnitFiles Value="..\src;..\..\rutils-master\pkg;..\src\rutils"/>
         <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
     </CompilerOptions>
-    <Files Count="7">
+    <Files Count="14">
       <Item1>
         <Filename Value="..\src\wsconnector.pas"/>
         <HasRegisterProc Value="True"/>
@@ -24,26 +24,54 @@
         <UnitName Value="WSBaseQuery"/>
       </Item2>
       <Item3>
-        <Filename Value="..\src\rutils.pas"/>
-        <UnitName Value="RUtils"/>
-      </Item3>
-      <Item4>
         <Filename Value="..\src\jwsclient.pas"/>
         <AddToUsesPkgSection Value="False"/>
         <UnitName Value="jwsclient"/>
-      </Item4>
-      <Item5>
-        <Filename Value="..\src\DBJsonWriter.pas"/>
-        <UnitName Value="DBJsonWriter"/>
-      </Item5>
-      <Item6>
+      </Item3>
+      <Item4>
         <Filename Value="..\src\helper.stream.pas"/>
         <UnitName Value="Helper.Stream"/>
+      </Item4>
+      <Item5>
+        <Filename Value="..\src\jwsmessages.pas"/>
+        <UnitName Value="jwsmessages"/>
+      </Item5>
+      <Item6>
+        <Filename Value="..\src\servermethods.pas"/>
+        <UnitName Value="servermethods"/>
       </Item6>
       <Item7>
-        <Filename Value="..\src\DBJsonReader.pas"/>
-        <UnitName Value="DBJsonReader"/>
+        <Filename Value="..\src\s7sconn.pas"/>
+        <UnitName Value="s7sConn"/>
       </Item7>
+      <Item8>
+        <Filename Value="..\src\s7sdbjsonreader.pas"/>
+        <UnitName Value="S7SDBJsonReader"/>
+      </Item8>
+      <Item9>
+        <Filename Value="..\src\helper.exceptions.pas"/>
+        <UnitName Value="Helper.Exceptions"/>
+      </Item9>
+      <Item10>
+        <Filename Value="..\src\s7sprovider.pas"/>
+        <UnitName Value="S7SProvider"/>
+      </Item10>
+      <Item11>
+        <Filename Value="..\src\s7sdbjsonwriter.pas"/>
+        <UnitName Value="S7SDBJsonWriter"/>
+      </Item11>
+      <Item12>
+        <Filename Value="..\src\jwsmethods.pas"/>
+        <UnitName Value="jwsmethods"/>
+      </Item12>
+      <Item13>
+        <Filename Value="..\src\rutils\rgutils.pas"/>
+        <UnitName Value="RGUtils"/>
+      </Item13>
+      <Item14>
+        <Filename Value="..\src\rutils\rutils.pas"/>
+        <UnitName Value="RUtils"/>
+      </Item14>
     </Files>
     <RequiredPkgs Count="1">
       <Item1>

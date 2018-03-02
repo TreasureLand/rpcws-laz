@@ -22,6 +22,7 @@ type
     Button5: TButton;
     Button6: TButton;
     Button7: TButton;
+    Button8: TButton;
     DataSource1: TDataSource;
     DataSource2: TDataSource;
     DBGrid1: TDBGrid;
@@ -32,89 +33,9 @@ type
     WSClientDataset1: TWSClientDataset;
     WSConnector: TWSConnector;
     WSQuery1: TWSQuery;
-    WSQuery1BAIRRO: TStringField;
-    WSQuery1BAIRRO2: TStringField;
-    WSQuery1BLOQUEIADEBITOS: TStringField;
-    WSQuery1BLOQUEIALIMITE: TStringField;
-    WSQuery1CELULAR: TStringField;
-    WSQuery1CEP: TStringField;
-    WSQuery1CEP2: TStringField;
-    WSQuery1CIDADE: TStringField;
-    WSQuery1CIDADE2: TStringField;
-    WSQuery1CIVIL: TStringField;
-    WSQuery1CODEMPRESA: TStringField;
-    WSQuery1CODPESSOA: TStringField;
-    WSQuery1CODUSUARIO: TStringField;
-    WSQuery1CONJUGUE: TStringField;
-    WSQuery1CONTATO: TStringField;
-    WSQuery1CPF_CNPJ: TStringField;
-    WSQuery1CREDITO1: TFloatField;
-    WSQuery1CREDITO2: TFloatField;
-    WSQuery1DATAADM: TDateField;
-    WSQuery1DESC_AUTOMATICO: TFloatField;
-    WSQuery1DTNASC: TDateField;
-    WSQuery1DT_CAD: TDateField;
-    WSQuery1EMAIL: TStringField;
-    WSQuery1ENDERECO: TStringField;
-    WSQuery1ENDERECO2: TStringField;
-    WSQuery1ENDTRAB: TStringField;
-    WSQuery1ESTADO: TStringField;
-    WSQuery1ESTADO2: TStringField;
-    WSQuery1FAX: TStringField;
-    WSQuery1FISJUR: TStringField;
-    WSQuery1FONE: TStringField;
-    WSQuery1FONE2: TStringField;
-    WSQuery1FONEC: TStringField;
-    WSQuery1FONEM: TStringField;
-    WSQuery1FONEP: TStringField;
-    WSQuery1FONETRAB: TStringField;
-    WSQuery1LIMITE: TFloatField;
-    WSQuery1LOCALNASCIMENTO: TStringField;
-    WSQuery1MAE: TStringField;
-    WSQuery1MSN: TStringField;
-    WSQuery1NOME: TStringField;
-    WSQuery1OBS: TStringField;
-    WSQuery1OPERADOR: TStringField;
-    WSQuery1ORGAOEXP: TStringField;
-    WSQuery1PAI: TStringField;
-    WSQuery1PROF: TStringField;
-    WSQuery1RAZAO: TStringField;
-    WSQuery1RENDAMENSAL: TFloatField;
-    WSQuery1RESP_COBRANCA: TStringField;
-    WSQuery1RG_IE: TStringField;
-    WSQuery1SEXO: TStringField;
-    WSQuery1SITE: TStringField;
-    WSQuery1SOMENTEAVISTA: TStringField;
-    WSQuery1STATUS: TStringField;
-    WSQuery1TEMPORESIDENCIA: TStringField;
-    WSQuery1TIPO: TStringField;
-    WSQuery1TIPO2: TStringField;
-    WSQuery1TIPOIMOVEL: TStringField;
-    WSQuery1TRABALHO: TStringField;
-    WSQuery1UFORGAOEXP: TStringField;
     WSQuery2: TWSQuery;
-    WSQuery2BRUTO: TFloatField;
-    WSQuery2CODEMPRESA: TStringField;
-    WSQuery2CODIGO: TStringField;
-    WSQuery2CODUSUARIO: TStringField;
-    WSQuery2DATA: TDateField;
-    WSQuery2DATADIGITACAO: TDateField;
-    WSQuery2FINO: TFloatField;
-    WSQuery2HISTORICO: TStringField;
-    WSQuery2HORARIO: TTimeField;
-    WSQuery2IDCONTA: TStringField;
-    WSQuery2MIL: TFloatField;
-    WSQuery2SUBTOTAL: TBCDField;
-    WSQuery2SUBTOTALF: TBCDField;
-    WSQuery2SUBTOTALGERALF: TBCDField;
-    WSQuery2SUBTOTALGERALR: TBCDField;
-    WSQuery2TEOR: TFloatField;
-    WSQuery2TIPO1: TStringField;
-    WSQuery2TIPO2: TStringField;
-    WSQuery2TIPO3: TStringField;
-    WSQuery2TIPO4: TStringField;
-    WSQuery2VALOR: TBCDField;
     WSQuery3: TWSQuery;
+    WSQuery4: TWSQuery;
     procedure BitBtn1Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
@@ -123,6 +44,7 @@ type
     procedure Button5Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
     procedure Button7Click(Sender: TObject);
+    procedure Button8Click(Sender: TObject);
     procedure WSQuery1AfterScroll({%H-}DataSet: TDataSet);
     procedure WSQuery2AfterOpen({%H-}DataSet: TDataSet);
   private
@@ -201,6 +123,25 @@ begin
   end;
 end;
 
+procedure TFormDemo.Button8Click(Sender: TObject);
+begin
+  WSConnector.AutoCommit:=False;
+  with WSQuery3 do
+  begin
+    close;
+    sql.Clear;
+    sql.Add('insert into pessoas');
+    sql.Add('(cod_pessoa,cod_empresa,nome,fantasia)');
+    sql.Add('values');
+    sql.Add('(:cod_pessoa,:cod_empresa,:nome,:fantasia)');
+    ParamByname('cod_pessoa').AsInteger:=9999;
+    ParamByname('cod_empresa').AsInteger:=1;
+    ParamByname('nome').AsString:= 'FERNANDO FERREIRA GOMES NASCIMENTO';
+    ParamByname('fantasia').AsString:= 'PASQUETO';
+    ExecSQL;
+  end;
+end;
+
 procedure TFormDemo.WSQuery1AfterScroll(DataSet: TDataSet);
 begin
   {
@@ -212,13 +153,14 @@ begin
   WSQuery2.Filter        := 'codigo = '+QuotedStr(WSQuery1CODPESSOA.AsString);
   WSQuery2.Filtered      := True;
   }
-
+  {
   WSQuery2.Close;
   WSQuery2.SQL.Clear;
   wsquery2.SQL.Add('select * from conta where codigo = :codigo');
   WSQuery2.ParamByname('codigo').AsString:= WSQuery1CODPESSOA.AsString;
   wsquery2.Open;
   lblTimeRequest.Caption:= WSConnector.ResponseTime;
+  }
 
 end;
 

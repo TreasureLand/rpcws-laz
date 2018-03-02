@@ -13,7 +13,7 @@ interface
 
 uses
   Classes, SysUtils, jwstypes, fpjson, jsonparser, servermethods, jwsjson, db,
-  BufDataSet, sqldb,IBConnection, s7sconn, RUtils;
+  BufDataSet, sqldb,IBConnection, s7sconn, S7SProvider, RUtils;
 
 type
 

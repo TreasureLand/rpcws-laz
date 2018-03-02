@@ -6,13 +6,13 @@ interface
 
 uses
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, db, fpjson,
-  jsonparser, BufDataset, sqltypes, s7stypes, WSConnector, RUtils, jwsjson,
-  BinaryDatapacketReaderEx, DBJsonWriter, helper.stream;
+  jsonparser, BufDataset, sqltypes, s7stypes, WSConnector, RUtils, jwsjson,jwsconsts,
+  BinaryDatapacketReaderEx, s7sdbJsonWriter, helper.stream, jsonscanner;
 
 
 type
 
-  TApplyUpdateJSON = TDBJsonWriter;
+  TApplyUpdateJSON = TS7SDBJsonWriter;
 
   { TWSBaseQuery }
 
@@ -20,6 +20,7 @@ type
   private
     { Private declarations }
     FMethod              : String;
+    FTableName           : String;
     FMethodType          : TWSMethodType;
     FWSConnetor          : TWSConnector;
     FPacotes             : Integer;
@@ -27,33 +28,39 @@ type
     FReturnFields        : String;
     FSQL                 : TStringList;
     FParams              : TParams;
+    FParamsValid         : Boolean;
     FFieldNameQuoteChars : TQuoteChars;
-    //FWiterEvent          : TApplyRecUpdateEvent;
-    FApplyJSON           :  TApplyUpdateJSON;
+    FApplyJSON           : TApplyUpdateJSON;
     FQueryBase64         : Boolean;
+    FGetData             : Boolean;
+    FMergeChangeLog      : Boolean;
+    FDataName            : String;
+    FData                : String;
     procedure SetSQL(AValue: TStringList);
     procedure SetWSConnetor(AValue: TWSConnector);
+    procedure SQLChange(Sender: TObject);
     function SQLToJson(const POpen:Boolean = True; {%H-}PDadosEmPacotes:Boolean = True): String;
     function ParamsToJson: String;
     function IsSelect(ASQL: string): boolean;
     function IsWhere(AClause:String): Boolean;
-    Function DoExecSQL: Boolean;
-    procedure DoOpen;
+    //procedure DoOpen;
     procedure CallToDataset(ADataset:TCustomBufDataset; POpen:Boolean = True);
-    procedure CopyFromDataset(DataSet: TDataSet; CopyData: Boolean; CopyFields:Boolean);
   private
     FOpening: Boolean;
+    procedure ApplyUpdates; override; overload;
+    procedure ApplyUpdates(MaxErrors: Integer); override; overload;
+    Function GetDataStr(const ADataName:String;const AMergeChangeLog:Boolean = True):String; virtual;
   protected
     { Protected declarations }
     procedure SetActive(Value: Boolean); override;
     procedure ApplyRecUpdate(UpdateKind: TUpdateKind); override;
   public
     { Public declarations }
+    Function DoExecSQL: Boolean;
     property FieldNameQuoteChars:TQuoteChars  read FFieldNameQuoteChars write FFieldNameQuoteChars;
     constructor Create(AOwner : TComponent); override;
     Destructor destroy; override;
     Function ParamByname(Const AParamName : String) : TParam;
-    procedure ApplyUpdates(MaxErrors: Integer); override; overload;
 
   published
     { Published declarations }
@@ -95,25 +102,33 @@ type
       Destructor destroy; override;
       //procedure Open;
       Function ExecSQL:Boolean;
+      procedure ApplyUpdates; override; overload;
+      procedure ApplyUpdates(MaxErrors: Integer); override; overload;
+      Function GetDataStr(const ADataName:String;const AMergeChangeLog:Boolean = True):String; override;
     published
-    property Method           :string       Read FMethod         write FMethod;
+      property TableName        :String       read FTableName      write FTableName;
+      //property Method           :string       Read FMethod         write FMethod;
   end;
 
   { TWSClientMethods }
   TWSClientMethods=Class(TComponent)
     private
-      FMethod      : String;
+      //FHTTPModule  : String;
+      FMethodModule: String;
+      FMethodName  : String;
       FQueryBase64 : Boolean;
     protected
     public
       Connector : TWSConnector;
       constructor Create(AOwner : TComponent); override;
       Destructor destroy; override;
-      Function StrCall(const AMethod: String; Args: array of variant):String;
-      Function JSONCall(const AMethod: String; Args: array of variant):TJSONObject;
-      procedure DatasetCall(AMethod,AFieldName,ATableName:string;ADataset:TDataset;AQueryBase64:Boolean);
+      Function StrCall(Args: array of variant):String;
+      Function JSONCall(Args: array of variant):TJSONObject;
+      procedure DatasetCall(ADataset:TDataset;Args: array of variant);
     published
-      property Method           :string      Read FMethod         write FMethod;
+      //property HTTPModule       :string      read FHTTPModule     write FHTTPModule;
+      property MethodModule     :string      Read FMethodModule   write FMethodModule;
+      property MethodName       :string      Read FMethodName     write FMethodName;
       property Querybase64      :Boolean     Read FQueryBase64    write FQueryBase64;
   end;
 
@@ -134,15 +149,17 @@ begin
   Pacotes         := 0;
   FDadosEmPacotes := False;
   FQueryBase64    := True;
-  FReturnFields   := '1'; //1 = retorna fields, 0 = nao retorna fields
-  FSQL            := TStringList.Create;
-  FParams         := TParams.create;
+  FReturnFields     := '1'; //1 = retorna fields, 0 = nao retorna fields
+  FSQL              := TStringList.Create;
+  FSQL.OnChange:=@SQLChange;
+  FParams           := TParams.create;
 end;
 
 destructor TWSBaseQuery.destroy;
 begin
-  FreeAndNil(FSQL);
-  FreeAndNil(FParams);
+  //Self.Close;
+  FSQL.Free;
+  FParams.Free;
   inherited Destroy;
 end;
 
@@ -160,7 +177,11 @@ begin
       if pos(':'+params.Items[i].Name,FSQL.Text) = 0 then
         raise Exception.Create('Parâmetro: '+params.Items[i].Name+' '+ ' não informado na SQL')
     end;
-    Result:= '{"SQL":"'+Trim(FSQL.Text)+'"';
+    Result:= '{"METHODTYPE":"'+getMethodTypeToStr(FMethodType)+'"';
+    if trim(Sql.Text) <> '' then
+      Result:= Result + ',"SQL":"'+Trim(FSQL.Text)+'"';
+    if trim(FTableName)<> '' then
+      Result:= Result + ',"TABLENAME":"'+Trim(FTableName)+'"';
     if FDadosEmPacotes then //se nao for dados em pacotes nao faz sentindo entrar aqui
     begin
       if FPacotes > 0 then APacotes:= FPacotes //busca pacotes definido pelo usuario na query
@@ -172,7 +193,6 @@ begin
     end;
     if FQueryBase64 then
       Result:= Result + ',"QUERYBASE64":"S"';
-    Result:= Result+',"METHODTYPE":"'+getMethodTypeToStr(FMethodType)+'"';
     AParam:= ParamsToJson;
     if AParam <> '{}' then
       Result:= Result+',"Params":'+AParam;
@@ -186,6 +206,12 @@ procedure TWSBaseQuery.SetWSConnetor(AValue: TWSConnector);
 begin
   if FWSConnetor=AValue then Exit;
   FWSConnetor:=AValue;
+end;
+
+procedure TWSBaseQuery.SQLChange(Sender: TObject);
+begin
+  FParamsValid:=False;
+  //params.Clear;
 end;
 
 procedure TWSBaseQuery.SetSQL(AValue: TStringList);
@@ -204,6 +230,11 @@ begin
     vJson := TJSONObject.create;
     for p in FParams do
     begin
+      if p.IsNull then
+      begin
+        vJson.add(p.name,TJSONNull.Create);
+        Continue;
+      end;
       Case p.DataType of
         ftSmallint, ftInteger, ftWord,ftAutoInc, ftLargeint:
         begin
@@ -216,7 +247,9 @@ begin
         end;
         ftDate,ftDateTime,ftTimeStamp,ftTime:
         begin
-          vJson.add(p.name,p.asstring);
+          if trim(p.asstring) <> '' then
+            vJson.add(p.name,p.asstring)
+          else vJson.add(p.name,'#nulldate#'); //else vJson.add(p.name,jtNull);
         end;
         ftBlob,ftMemo,ftFmtMemo,ftWideMemo:
         begin
@@ -232,6 +265,7 @@ begin
     Result := vJson.AsJSON;
   finally
     vJson.free;
+    //jNull.Free;
   end;
 end;
 
@@ -253,46 +287,85 @@ var
   ADataItem : TJSONData;
   aLogJson : TStringList;
 begin
+  if trim(FTableName) = '' then
+    raise Exception.Create('TableName não pode ser vazio');
+  if Self.ChangeCount = 0 then Exit;
   FApplyJSON := TApplyUpdateJSON.Create();
   try
     ManualMergeChangeLog:=True;
     inherited ApplyUpdates(MaxErrors);
-    if FApplyJSON.&Object <> nil then
+    if (FApplyJSON.&Object <> nil) then
     begin
       TFileStream.WriteTo(ClassName+'_ApplyUpdates.txt', FApplyJSON.&Object.AsJSON);
-      aJson := '{"METHODTYPE":"'+getMethodTypeToStr(wsmtApplyUpdate)+'"';
-      aJson := aJson+',"DATA":'+FApplyJSON.&Object.AsJSON+'}';
-      aLogJson      := TStringList.Create;
+      if FGetData then
+        FData := '{"DATANAME":"' + Trim(FDataName) + '"'
+      else FData := '{"METHODTYPE":"'+getMethodTypeToStr(wsmtApplyUpdate)+'"';
+      FData := FData+',{"TABLENAME":"'+Trim(FTableName)+'"';
+      FData := FData+',"DATA":'+FApplyJSON.&Object.AsJSON+'}';
+
+      aLogJson := TStringList.Create;
       aLogJson.Clear;
-      aLogJson.Add(aJson);
+      aLogJson.Add(FData);
       aLogJson.SaveToFile('LogJson.txt');
       aLogJson.Free;
-      aJson :=  FWSConnetor.StrCall(FMethod,['0',aJson,FReturnFields],0);
-      aJson := FWSConnetor.CheckResult(aJson);
-      ADataItem := GetJSON(aJson);
-      aJson := ADataItem.AsString;
-      if aJson <> 'OK' then
-        raise Exception.CreateFmt('Erro retornado do servidor: %s', [aJson]);
+
+      if not FGetData then
+      begin
+        if FWSConnetor.AutoCommit then
+        begin
+          aJson :=  FWSConnetor.StrCall('', FMethod,['0',FData,FReturnFields],0);
+          aJson := FWSConnetor.CheckResult(aJson);
+        end
+        else
+        begin
+          FWSConnetor.WSTransaction.AddListCmd:= FData;
+          aJson:= JSON_RESULT_OK;
+        end;
+        ADataItem := GetJSON(aJson);
+        aJson := ADataItem.AsString;
+        if aJson <> 'OK' then
+          raise Exception.CreateFmt('Erro retornado do servidor: %s', [aJson]);
+      end;
     end;
-    MergeChangeLog;
+    if FMergeChangeLog then
+      MergeChangeLog;
   finally
     FApplyJSON.Free;
   end;
 end;
 
+function TWSBaseQuery.GetDataStr(const ADataName: String;
+  const AMergeChangeLog: Boolean): String;
+begin
+  FGetData:= True;
+  FMergeChangeLog:=AMergeChangeLog;
+  if trim(ADataName) = '' then
+    FDataName:=Self.Name
+  else FDataName:=ADataName;
+  Self.ApplyUpdates(-1);
+  Result:= FData;
+end;
 
 function TWSBaseQuery.ParamByname(const AParamName: String): TParam;
 begin
-  if FParams.FindParam(AparamName) = Nil then
+  if not FParamsValid then
   begin
-    With TParam.create(fParams) do
-    begin
-      Name := AParamName;
-      ParamType:= ptInput;
-      Result := FParams.FindParam(AparamName);
-    end;
-  end
-  Else Result := FParams.FindParam(AparamName);
+    params.ParseSQL(SQL.Text, True);
+    FParamsValid:=True;
+  end;
+  Result := Params.ParamByName(AParamName);
+  //Result := FParams.FindParam(AparamName);
+  //if Result = Nil then
+  //begin
+  //  Result := TParam.create(fParams);
+  //  with Result do
+  //  begin
+  //    Name     := AParamName;
+  //    ParamType:= ptInput;
+  //    //Result   := FParams.FindParam(AparamName);
+  //  end;
+  //end
+  //Else Result := FParams.FindParam(AparamName);
 end;
 
 function TWSBaseQuery.IsSelect(ASQL: string): boolean;
@@ -310,21 +383,41 @@ var vJson      : String;
     vJresult   : TJSONObject;
     vVDataItem : TJSONData;
 begin
+  if trim(Sql.Text) = '' then
+    raise Exception.Create('SQL não pode ser vazio');
+  if IsSelect(sql.Text) then
+    raise Exception.Create('SQL não pode ser select para ExecSQL');
   try
     FMethodType:= wsmtExecSQL;
     vJson      := SQLToJson(True);
-    vJresult   := FWSConnetor.JsonCall(FMethod,['0',vJson,FReturnFields],0);
+    //vJresult   := FWSConnetor.JsonCall(FMethod,['0',vJson,FReturnFields],0);
+    //vVDataItem := vJResult.Items[0];
+    if FWSConnetor.AutoCommit then
+    begin
+      vJresult   := FWSConnetor.JsonCall('', FMethod,['0',vJson,FReturnFields],0);
+    end
+    else
+    begin
+      FWSConnetor.WSTransaction.AddListCmd:=vJson;
+      with TJSONParser.Create(JSON_RESULT_OK, [joUTF8]) do
+      try
+        vJresult := Parse as TJSONObject;
+      finally
+        Free;
+      end;
+    end;
     vVDataItem := vJResult.Items[0];
     Result     := (vVDataItem.AsString = 'OK');
   finally
     FreeAndNil(vJresult);
   end;
 end;
-
+{
 procedure TWSBaseQuery.DoOpen;
 begin
   CallToDataset(self,True);
 end;
+}
 
 procedure TWSBaseQuery.CallToDataset(ADataset:TCustomBufDataset; POpen:Boolean = True);
 var vjson    : TJSONObject;
@@ -341,119 +434,22 @@ begin
   end;
 end;
 
-procedure TWSBaseQuery.CopyFromDataset(DataSet: TDataSet; CopyData: Boolean; CopyFields:Boolean);
-Const UseStreams = ftBlobTypes;
-Var
-  I  : Integer;
-  F,F1,F2 : TField;
-  L1,L2  : TList;
-  N : String;
-  OriginalPosition: TBookMark;
-  S : TMemoryStream;
+procedure TWSBaseQuery.ApplyUpdates;
 begin
-  if CopyFields or (Active = false) then
-  begin
-    Close;
-    Fields.Clear;
-    FieldDefs.Clear;
-    For I:=0 to Dataset.FieldCount-1 do
-    begin
-      F:=Dataset.Fields[I];
-      TFieldDef.Create(FieldDefs,F.FieldName,F.DataType,F.Size,F.Required,F.FieldNo);
-    end;
-    CreateDataset;
-    Open;
-  end;
-  L1:=Nil;
-  L2:=Nil;
-  S:=Nil;
-  If CopyData then
-  begin
-    try
-      L1:=TList.Create;
-      L2:=TList.Create;
-      For I:=0 to FieldDefs.Count-1 do
-      begin
-        N:=FieldDefs[I].Name;
-        F1:=FieldByName(N);
-        F2:=DataSet.FieldByName(N);
-        L1.Add(F1);
-        L2.Add(F2);
-        If (FieldDefs[I].DataType in UseStreams) and (S=Nil) then
-          S:=TMemoryStream.Create;
-      end;
-      DisableControls;
-      Dataset.DisableControls;
-      OriginalPosition:=Dataset.GetBookmark;
-      Try
-        Dataset.Open;
-        Dataset.First;
-        While not Dataset.EOF do
-        begin
-          Append;
-          For I:=0 to L1.Count-1 do
-          begin
-            F1:=TField(L1[i]);
-            F2:=TField(L2[I]);
-            If Not F2.IsNull then
-            begin
-              Case F1.DataType of
-                 ftFixedChar,
-                 ftString   : F1.AsString:=F2.AsString;
-                 ftFixedWideChar,
-                 ftWideString : F1.AsWideString:=F2.AsWideString;
-                 ftBoolean  : F1.AsBoolean:=F2.AsBoolean;
-                 ftFloat    : F1.AsFloat:=F2.AsFloat;
-                 ftAutoInc,
-                 ftLargeInt : F1.AsInteger:=F2.AsInteger;
-                 ftSmallInt : F1.AsInteger:=F2.AsInteger;
-                 ftInteger  : F1.AsInteger:=F2.AsInteger;
-                 ftDate     : F1.AsDateTime:=F2.AsDateTime;
-                 ftTime     : F1.AsDateTime:=F2.AsDateTime;
-                 ftTimestamp,
-                 ftDateTime : F1.AsDateTime:=F2.AsDateTime;
-                 ftCurrency : F1.AsCurrency:=F2.AsCurrency;
-                 ftBCD,
-                 ftFmtBCD   : F1.AsBCD:=F2.AsBCD;
-              else
-              if (F1.DataType in UseStreams) then
-              begin
-                S.Clear;
-                TBlobField(F2).SaveToStream(S);
-                S.Position:=0;
-                TBlobField(F1).LoadFromStream(S);
-              end
-              else F1.AsString:=F2.AsString;
-            end;
-            end;
-          end;
-          Try
-            Post;
-          except
-            Cancel;
-            Raise;
-          end;
-          Dataset.Next;
-          end;
-      Finally
-        DataSet.GotoBookmark(OriginalPosition); //Return to original record
-        Dataset.EnableControls;
-        EnableControls;
-      end;
-    finally
-      L2.Free;
-      l1.Free;
-      S.Free;
-    end;
-  end;
+  ApplyUpdates(0);
 end;
 
 procedure TWSBaseQuery.SetActive(Value: Boolean);
+var aFieldDefsCount,aFieldsCount:integer;
 begin
   //ShowMessage('TWSBaseQuery.SetActive '+BoolToStr(Value, True));
   //writeln('TWSBaseQuery.SetActive ', Value, ' Opening: ', FOpening);
+  //if csDestroying in ComponentState then
+  //   Exit;
   if not Value or FOpening or Active then
-     Inherited
+  begin
+    Inherited;
+  end
   else
   begin
     FOpening:= True;
@@ -493,11 +489,7 @@ end;
 
 function TWSQuery.ExecSQL:Boolean;
 begin
-  if trim(Sql.Text) = '' then
-    raise Exception.Create('SQL não pode ser vazio');
-  if IsSelect(sql.Text) then
-    raise Exception.Create('SQL não pode ser select para ExecSQL');
-  result:= DoExecSQL;
+  result:= Self.DoExecSQL;
 end;
 
 { TWSClientDataset }
@@ -506,11 +498,25 @@ constructor TWSClientDataset.Create(AOwner : TComponent);
 begin
   inherited Create(AOwner);
   FMethodType:= wsmtFind;
+  FMethod    := 'QuerySQL';
 end;
 
-Destructor TWSClientDataset.destroy;
+destructor TWSClientDataset.destroy;
 begin
   inherited destroy;
+end;
+
+procedure TWSClientDataset.ApplyUpdates(MaxErrors: Integer);
+begin
+  FGetData:= False;
+  FMergeChangeLog:= True;
+  inherited ApplyUpdates(MaxErrors);
+end;
+
+function TWSClientDataset.GetDataStr(const ADataName: String;
+  const AMergeChangeLog: Boolean): String;
+begin
+  Inherited GetDataStr(ADataName,AMergeChangeLog);
 end;
 
 {
@@ -526,15 +532,14 @@ begin
 end;
 }
 
-Function TWSClientDataset.ExecSQL:Boolean;
+function TWSClientDataset.ExecSQL: Boolean;
 begin
-  if (trim(FMethod) = '') then
-    raise Exception.Create('Method não pode ser vazio');
-  if trim(FSQL.Text) = '' then
-    raise Exception.Create('ComandText não pode ser vazio');
-  if IsSelect(FSQL.Text) then
-    raise Exception.Create('ComandText não pode ser select para ExecSQL');
-  Result:= DoExecSQL;
+  result:= DoExecSQL;
+end;
+
+procedure TWSClientDataset.ApplyUpdates;
+begin
+  inherited ApplyUpdates;
 end;
 
 { TWSClientMethods }
@@ -549,55 +554,25 @@ begin
   inherited Destroy;
 end;
 
-Function TWSClientMethods.StrCall(const AMethod: String; Args: array of variant):String;
+//Function TWSClientMethods.CallApplyUpdates(Args: array of variant):String;
+
+Function TWSClientMethods.StrCall(Args: array of variant):String;
 begin
-  Result:= Connector.StrCall(AMethod,Args,0);
+  Result:= Connector.StrCall(FMethodModule, FMethodName,Args,0);
 end;
 
-Function TWSClientMethods.JSONCall(const AMethod: String; Args: array of variant):TJSONObject;
+Function TWSClientMethods.JSONCall(Args: array of variant):TJSONObject;
 begin
-  Result:= GetJSONObject(Connector.StrCall(AMethod,Args,0), True);
+  Result:= GetJSONObject(Connector.StrCall(FMethodModule,FMethodName,Args,0), True);
   //Result:= (TJSONParser.Create(Connector.StrCall(AMethod,Args,0)).Parse as TJSONObject);
 end;
 
-procedure TWSClientMethods.DatasetCall(AMethod,ATableName,AFieldName:string;ADataset:TDataset;AQueryBase64:Boolean);
-var vjson    : TJSONObject;
-    AJson    : String;
+procedure TWSClientMethods.DatasetCall(ADataset:TDataset;Args: array of variant);
+var vjson       : TJSONObject;
 begin
-  if AQueryBase64 and (not (ADataset is TCustomBufDataset)) then
-    AQueryBase64:= False;
-  AJson:= '{"TABLE":"'+Trim(ATableName)+'"';
-  AJson:= AJson + ',"FIELDNAME":"'+Trim(AFieldName)+'"';
-  if AQueryBase64 then
-    AJson:= AJson + ',"QUERYBASE64":"S"';
-  AJson:= AJson+',"METHODTYPE":"'+getMethodTypeToStr(wsmtFind)+'"';
-  AJson:= AJson+'}';
-  vJSon := Connector.JSONCall('QuerySql', ['0',AJson,true],0);
+  vJSon := JSONCall(Args); //Connector.JSONCall(FMethodModule, FMethodName, ['0',AJson,true],0);
   try
-    if AQueryBase64 then
-      Base64ToDataset(TCustomBufDataset(ADataset),vjson)
-    else
-    JSONToDataset(ADataset,vjson,true);
-  finally
-    FreeAndNil(vjson);
-  end;
-end;
-
-procedure TWSClientMethods.DatasetCall(AMethod,ATableName,AFieldName:string;ADataset:TDataset;AQueryBase64:Boolean);
-var vjson    : TJSONObject;
-    AJson    : String;
-begin
-  if AQueryBase64 and (not (ADataset is TCustomBufDataset)) then
-    AQueryBase64:= False;
-  AJson:= '{"TABLE":"'+Trim(ATableName)+'"';
-  AJson:= AJson + ',"FIELDNAME":"'+Trim(AFieldName)+'"';
-  if AQueryBase64 then
-    AJson:= AJson + ',"QUERYBASE64":"S"';
-  AJson:= AJson+',"METHODTYPE":"'+getMethodTypeToStr(wsmtFind)+'"';
-  AJson:= AJson+'}';
-  vJSon := Connector.JSONCall('QuerySql', ['0',AJson,true],0);
-  try
-    if AQueryBase64 then
+    if FQueryBase64 then
       Base64ToDataset(TCustomBufDataset(ADataset),vjson)
     else
     JSONToDataset(ADataset,vjson,true);

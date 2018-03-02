@@ -1,5 +1,5 @@
 IP=127.0.0.1
 PROTOCOLO=Firebird
-BASEDADOS=C:\Gold_Pro1.0\GOLD_PRO.FDB
+BASEDADOS=C:\Gold_Pro\Dados.FDB
 USUARIO=sysdba
 SENHA=masterkey

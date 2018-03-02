@@ -19,21 +19,27 @@ type
 
   { TJWSRequestContent }
 
-  TJWSRequestContent = class(TJSONObject)
+  TJWSRequestContent = class //(TJSONObject)
   private
+    FModule: string;
+    FJSON: TJSONObject;
     FParams: TJSONArray;
-    function GetArgs: TJSONArray;
+    //function GetArgs: TJSONArray;
     function GetID: integer;
     function GetMethod: string;
+    function GetModule: string;
     procedure SetID(AValue: integer);
     procedure SetMethod(AValue: string);
   public
-    constructor create;
+    constructor create();
+    constructor createAs(aJSON: TJSONObject);
     destructor destroy; override;
 
+    property JSON: TJSONObject  read FJSON; //default;
     property ID: integer read GetID write SetID;
+    property Module: string read GetModule;
     property Method: string read GetMethod write SetMethod;
-    property Args: TJSONArray read GetArgs;
+    property Args: TJSONArray read FParams;
   end;
 
   { TJWSResponseContent }
@@ -241,75 +247,103 @@ end;
 
 { TJWSRequestContent }
 
-function TJWSRequestContent.GetArgs: TJSONArray;
-begin
-  if Find('params') <> nil then
-    result := (Find('params') as TJSONArray)
-  else
-  begin
-    FParams := TJSONArray.Create;
-
-    self.Add('params',FParams);
-    result := (Find('params') as TJSONArray);
-  end;
-end;
+//function TJWSRequestContent.GetArgs: TJSONArray;
+//var
+//  o: TJSONData;
+//begin
+//  if FParams = nil then
+//  begin
+//    o := JSON.Find('params');
+//    if o <> nil then
+//      FParams := o as TJSONArray
+//    else
+//    begin
+//      FParams := TJSONArray.Create;
+//      JSON.Add('params',FParams);
+//    end;
+//  end;
+//  Result := FParams;
+//end;
 
 function TJWSRequestContent.GetID: integer;
+var
+  o: TJSONData;
 begin
-  if Self.Find('id') <> nil then
-    result := Self.Find('id').AsInteger
+  o := JSON.Find('id');
+  if o <> nil then
+    result := o.AsInteger
   else
   begin
-    Self.Add('id',0);
-
+    JSON.Add('id', 0);
     result := 0;
   end;
 end;
 
 function TJWSRequestContent.GetMethod: string;
 begin
-  if Self.Find('method') <> nil then
-    result := Self.Find('method').AsString
+  if JSON.Find('method') <> nil then
+    result := JSON.Find('method').AsString
   else
   begin
-    Self.Add('method','');
+    JSON.Add('method','');
 
     result := '';
   end;
 end;
 
+function TJWSRequestContent.GetModule: string;
+var
+  o: TJSONData;
+begin
+  if FModule = #0 then
+  begin
+    o := JSON.Find('module');
+    if o = nil then
+      FModule := ''
+    else
+      FModule := o.AsString;
+  end;
+  Result := FModule;
+end;
 
 procedure TJWSRequestContent.SetID(AValue: integer);
 begin
-  if Self.Find('id') <> nil then
-    Self.Find('id').AsInteger := AValue
+  if JSON.Find('id') <> nil then
+    JSON.Find('id').AsInteger := AValue
   else
-    Self.Add('id',AValue);
+    JSON.Add('id',AValue);
 end;
 
 procedure TJWSRequestContent.SetMethod(AValue: string);
 begin
-  if Self.Find('method') <> nil then
-    Self.Find('method').AsString := AValue
+  if JSON.Find('method') <> nil then
+    JSON.Find('method').AsString := AValue
   else
-    Self.Add('method',AValue);
+    JSON.Add('method',AValue);
 end;
 
-constructor TJWSRequestContent.create;
+constructor TJWSRequestContent.create();
 begin
   inherited create;
-
+  FModule := #0;
   FParams := TJSONArray.create;
+  JSON.Add('jsonrpc',JSONRPC_VERSION);
+  JSON.Add('method','');
+  JSON.Add('params',FParams);
+  JSON.Add('id',0);
+end;
 
-  Self.Add('jsonrpc',JSONRPC_VERSION);
-  Self.Add('method','');
-  Self.Add('params',FParams);
-  Self.Add('id',0);
+constructor TJWSRequestContent.createAs(aJSON: TJSONObject);
+begin
+  inherited create;
+  FJSON := aJSON;
+  FModule := #0;
+  FParams := JSON.Find('params') as TJSONArray;
 end;
 
 destructor TJWSRequestContent.destroy;
 begin
-
+  FJSON.Free;
   inherited destroy;
 end;
 
@@ -321,14 +355,11 @@ begin
   try
     if fileexists(paramstr(0) + 'log.txt') then
       slfile.loadfromfile(paramstr(0) + 'log.txt');
-
     slfile.add(datetimetostr(now) + #9 + amsg);
-
     slfile.savetofile(paramstr(0) + 'log.txt');
   finally
     freeandnil(slfile);
   end;
-
 end;
 
 

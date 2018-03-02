@@ -1,0 +1,1 @@
+{ "jsonrpc" : "2.0", "method" : "QuerySQL", "params" : ["0", { "METHODTYPE" : "wsmtOpen", "SQL" : "select * from cadcidade", "Pacotes" : "0", "Posicao" : "0", "QUERYBASE64" : "S" }], "id" : 0 }

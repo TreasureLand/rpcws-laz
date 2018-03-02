@@ -165,13 +165,14 @@ begin
   try
     try
       isprejson := (Value <> '') and (Value[1] in ['{', '[']);
-
+      {
       with TFileStream.Create('teste.json', fmCreate) do
       try
         WriteBuffer(Pointer(Value)^, Length(Value));
       finally
         Free;
       end;
+      }
       if isprejson then
         jdata :=  GetJSON(Value)
       else

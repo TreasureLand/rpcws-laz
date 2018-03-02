@@ -1,0 +1,37 @@
+object FDemo: TFDemo
+  Left = 472
+  Height = 237
+  Top = 137
+  Width = 411
+  Caption = 'FDemo'
+  ClientHeight = 237
+  ClientWidth = 411
+  LCLVersion = '1.6.4.0'
+  object Button1: TButton
+    Left = 24
+    Height = 49
+    Top = 8
+    Width = 152
+    Caption = 'Transação'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object WSConnector: TWSConnector
+    Connected = False
+    WSServer.HostName = '127.0.0.1'
+    WSServer.Port = '8084'
+    AutoCommit = False
+    left = 64
+    top = 56
+  end
+  object WSQuery1: TWSQuery
+    FieldDefs = <>
+    DadosEmPacotes = True
+    Pacotes = 0
+    params = <>
+    QueryBase64 = True
+    WSConnetor = WSConnector
+    left = 192
+    top = 53
+  end
+end

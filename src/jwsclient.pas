@@ -30,9 +30,9 @@ type
     //constructor Create;//(AOwner: TComponent); override;
     //destructor Destroy; override;
 
-    function Call(AMethod: string; Args: array of variant; AID: integer): string; overload;
+    function Call(AModule, AMethod: string; Args: array of variant; AID: integer): string; overload;
     function Call(ARequest: TJWSRequestContent): string; overload;
-    function JSONCall(AMethod: string; Args: array of variant; AID: integer): TJSONObject;
+    function JSONCall(AModule, AMethod: string; Args: array of variant; AID: integer): TJSONObject;
     function JSONCall(ARequest: TJWSRequestContent): TJSONObject; overload;
   published
     property Host: string read FHost write FHost;
@@ -46,7 +46,7 @@ uses jwsconsts;
 
 { TJWSClient }
 
-function TJWSClient.Call(AMethod: string; Args: array of variant; AID: integer): string;
+function TJWSClient.Call(AModule, AMethod: string; Args: array of variant; AID: integer): string;
 var
   response: TMemoryStream;
   joContent: TJSONObject;
@@ -61,8 +61,9 @@ begin
     slRes    := TStringList.Create;
     response := TMemoryStream.Create;
     joContent := TJSONObject.Create;
-    //joArgs := TJSONArray.create;
+    joArgs := TJSONArray.create;
     joContent.Add('jsonrpc', JSONRPC_VERSION);
+    joContent.Add('module', AModule);
     joContent.Add('method', AMethod);
     joArgs := GetJSONArray(Args);
     joContent.Add('params', joArgs);
@@ -101,7 +102,7 @@ begin
     slRes    := TStringList.Create;
     response := TMemoryStream.Create;
 
-    httpcli.FormPost(Host,ARequest.AsJSON, response);
+    httpcli.FormPost(Host, ARequest.JSON.AsJSON, response);
 
     if (response <> nil) then
     begin
@@ -119,9 +120,9 @@ begin
 
 end;
 
-function TJWSClient.JSONCall(AMethod: string; Args: array of variant; AID: integer): TJSONObject;
+function TJWSClient.JSONCall(AModule, AMethod: string; Args: array of variant; AID: integer): TJSONObject;
 begin
-  Result := (TJSONParser.Create(Call(AMethod,Args,AID)).Parse as TJSONObject); //
+  Result := (TJSONParser.Create(Call(AModule, AMethod,Args,AID)).Parse as TJSONObject); //
 end;
 
 function TJWSClient.JSONCall(ARequest: TJWSRequestContent): TJSONObject;

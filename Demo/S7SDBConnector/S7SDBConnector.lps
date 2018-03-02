@@ -4,15 +4,14 @@
     <PathDelim Value="\"/>
     <Version Value="10"/>
     <BuildModes Active="Default"/>
-    <Units Count="30">
+    <Units Count="37">
       <Unit0>
         <Filename Value="S7SDBConnector.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="-1"/>
-        <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="145"/>
+        <EditorIndex Value="7"/>
+        <CursorPos X="53" Y="10"/>
+        <UsageCount Value="157"/>
+        <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="demo.pas"/>
@@ -21,9 +20,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Demo"/>
+        <IsVisibleTab Value="True"/>
         <TopLine Value="109"/>
-        <CursorPos X="19" Y="134"/>
-        <UsageCount Value="145"/>
+        <CursorPos Y="116"/>
+        <UsageCount Value="157"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -34,30 +34,28 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="84"/>
+        <UsageCount Value="96"/>
       </Unit2>
       <Unit3>
         <Filename Value="..\..\src\s7sconn.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="s7sConn"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="327"/>
-        <CursorPos X="3" Y="331"/>
-        <UsageCount Value="84"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="96"/>
+        <CursorPos Y="107"/>
+        <UsageCount Value="96"/>
         <Loaded Value="True"/>
       </Unit3>
       <Unit4>
         <Filename Value="..\..\src\DBJsonReader.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="76"/>
-        <CursorPos Y="86"/>
-        <UsageCount Value="53"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="216"/>
+        <CursorPos X="9" Y="218"/>
+        <UsageCount Value="65"/>
         <Bookmarks Count="1">
           <Item0 Y="257" ID="1"/>
         </Bookmarks>
-        <Loaded Value="True"/>
       </Unit4>
       <Unit5>
         <Filename Value="..\..\src\DBJsonWriter.pas"/>
@@ -66,312 +64,404 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="53"/>
+        <UsageCount Value="65"/>
       </Unit5>
       <Unit6>
         <Filename Value="..\..\src\helper.stream.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Helper.Stream"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="53"/>
+        <UsageCount Value="65"/>
       </Unit6>
       <Unit7>
+        <Filename Value="..\..\src\s7sdbjsonreader.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="S7SDBJsonReader"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="151"/>
+        <CursorPos X="37" Y="218"/>
+        <UsageCount Value="30"/>
+        <Bookmarks Count="1">
+          <Item0 X="4" Y="118" ID="1"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\src\s7sprovider.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="S7SProvider"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="144"/>
+        <CursorPos X="46" Y="171"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\src\helper.exceptions.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Helper.Exceptions"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="17" Y="25"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit9>
+      <Unit10>
         <Filename Value="..\..\src\s7sdbjson.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="17"/>
         <CursorPos X="30" Y="20"/>
-        <UsageCount Value="48"/>
-      </Unit7>
-      <Unit8>
+        <UsageCount Value="47"/>
+      </Unit10>
+      <Unit11>
         <Filename Value="..\..\s7sconn.pas"/>
         <UnitName Value="s7sConn"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="277"/>
         <CursorPos Y="282"/>
-        <UsageCount Value="75"/>
-      </Unit8>
-      <Unit9>
+        <UsageCount Value="74"/>
+      </Unit11>
+      <Unit12>
         <Filename Value="..\clientquery\rgutils.pas"/>
         <EditorIndex Value="-1"/>
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="73"/>
-      </Unit9>
-      <Unit10>
+        <UsageCount Value="72"/>
+      </Unit12>
+      <Unit13>
         <Filename Value="..\clientquery\rutils.pas"/>
         <UnitName Value="RUtils"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="64"/>
         <CursorPos X="11" Y="78"/>
-        <UsageCount Value="73"/>
-      </Unit10>
-      <Unit11>
+        <UsageCount Value="72"/>
+      </Unit13>
+      <Unit14>
         <Filename Value="..\..\..\geral\rgutils.pas"/>
         <EditorIndex Value="-1"/>
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="14"/>
-      </Unit11>
-      <Unit12>
+        <UsageCount Value="13"/>
+      </Unit14>
+      <Unit15>
         <Filename Value="..\..\..\geral\rutils.pas"/>
         <EditorIndex Value="-1"/>
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="14"/>
-      </Unit12>
-      <Unit13>
+        <UsageCount Value="13"/>
+      </Unit15>
+      <Unit16>
         <Filename Value="C:\lazarus\lcl\include\customform.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="915"/>
         <CursorPos Y="935"/>
-        <UsageCount Value="8"/>
-      </Unit13>
-      <Unit14>
+        <UsageCount Value="7"/>
+      </Unit16>
+      <Unit17>
         <Filename Value="..\..\s7stypes.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="31"/>
         <CursorPos X="41" Y="40"/>
-        <UsageCount Value="30"/>
-      </Unit14>
-      <Unit15>
+        <UsageCount Value="29"/>
+      </Unit17>
+      <Unit18>
         <Filename Value="..\..\jwsjson.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="20"/>
         <CursorPos X="12" Y="34"/>
-        <UsageCount Value="14"/>
-      </Unit15>
-      <Unit16>
+        <UsageCount Value="13"/>
+      </Unit18>
+      <Unit19>
         <Filename Value="..\..\servermethods.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="122"/>
         <CursorPos Y="36"/>
-        <UsageCount Value="9"/>
-      </Unit16>
-      <Unit17>
+        <UsageCount Value="8"/>
+      </Unit19>
+      <Unit20>
         <Filename Value="C:\lazarus\fpc\3.0.2\source\packages\paszlib\src\zstream.pp"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="58"/>
         <CursorPos X="9" Y="69"/>
-        <UsageCount Value="4"/>
-      </Unit17>
-      <Unit18>
+        <UsageCount Value="3"/>
+      </Unit20>
+      <Unit21>
         <Filename Value="C:\lazarus\fpc\3.0.2\source\packages\fcl-db\src\base\db.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="1262"/>
         <CursorPos X="26" Y="1268"/>
-        <UsageCount Value="27"/>
-      </Unit18>
-      <Unit19>
+        <UsageCount Value="26"/>
+      </Unit21>
+      <Unit22>
         <Filename Value="..\..\src\s7stypes.pas"/>
-        <EditorIndex Value="5"/>
-        <TopLine Value="89"/>
-        <CursorPos X="30" Y="97"/>
-        <UsageCount Value="32"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="140"/>
+        <CursorPos X="3" Y="132"/>
+        <UsageCount Value="38"/>
         <Loaded Value="True"/>
-      </Unit19>
-      <Unit20>
+      </Unit22>
+      <Unit23>
         <Filename Value="C:\lazarus\fpc\3.0.2\source\packages\fcl-json\src\fpjson.pp"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="10"/>
         <TopLine Value="89"/>
         <CursorPos X="20" Y="101"/>
-        <UsageCount Value="34"/>
+        <UsageCount Value="40"/>
         <Loaded Value="True"/>
-      </Unit20>
-      <Unit21>
+      </Unit23>
+      <Unit24>
         <Filename Value="C:\lazarus\lcl\include\control.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="2112"/>
         <CursorPos Y="2125"/>
-        <UsageCount Value="13"/>
-      </Unit21>
-      <Unit22>
+        <UsageCount Value="12"/>
+      </Unit24>
+      <Unit25>
         <Filename Value="C:\lazarus\lcl\include\buttoncontrol.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="7"/>
         <CursorPos Y="21"/>
-        <UsageCount Value="13"/>
-      </Unit22>
-      <Unit23>
+        <UsageCount Value="12"/>
+      </Unit25>
+      <Unit26>
         <Filename Value="C:\lazarus\lcl\include\buttons.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="156"/>
         <CursorPos Y="170"/>
-        <UsageCount Value="13"/>
-      </Unit23>
-      <Unit24>
+        <UsageCount Value="12"/>
+      </Unit26>
+      <Unit27>
         <Filename Value="C:\lazarus\lcl\include\wincontrol.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="5372"/>
         <CursorPos Y="5385"/>
-        <UsageCount Value="13"/>
-      </Unit24>
-      <Unit25>
+        <UsageCount Value="12"/>
+      </Unit27>
+      <Unit28>
         <Filename Value="C:\lazarus\lcl\lclmessageglue.pas"/>
         <UnitName Value="LCLMessageGlue"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="109"/>
         <CursorPos Y="123"/>
-        <UsageCount Value="13"/>
-      </Unit25>
-      <Unit26>
+        <UsageCount Value="12"/>
+      </Unit28>
+      <Unit29>
         <Filename Value="C:\lazarus\lcl\interfaces\win32\win32callback.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="2478"/>
         <CursorPos X="19" Y="2495"/>
-        <UsageCount Value="13"/>
-      </Unit26>
-      <Unit27>
+        <UsageCount Value="12"/>
+      </Unit29>
+      <Unit30>
         <Filename Value="..\..\src\jwsjson.pas"/>
-        <EditorIndex Value="4"/>
-        <TopLine Value="27"/>
-        <CursorPos X="12" Y="40"/>
-        <UsageCount Value="22"/>
+        <EditorIndex Value="8"/>
+        <CursorPos X="21" Y="13"/>
+        <UsageCount Value="28"/>
         <Loaded Value="True"/>
-      </Unit27>
-      <Unit28>
+      </Unit30>
+      <Unit31>
         <Filename Value="C:\lazarus\fpc\3.0.2\source\packages\fcl-base\src\contnrs.pp"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="11"/>
         <TopLine Value="1834"/>
         <CursorPos X="3" Y="1836"/>
-        <UsageCount Value="16"/>
+        <UsageCount Value="22"/>
         <Loaded Value="True"/>
-      </Unit28>
-      <Unit29>
+      </Unit31>
+      <Unit32>
         <Filename Value="..\..\src\uDBExecutorSQLdb.pas"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="21"/>
-        <CursorPos X="26" Y="44"/>
-        <UsageCount Value="16"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="27"/>
+        <CursorPos X="23" Y="48"/>
+        <UsageCount Value="19"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="..\..\src\uDBExecutor.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="9"/>
+        <CursorPos Y="12"/>
+        <UsageCount Value="11"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="C:\lazarus\fpc\3.0.2\source\rtl\inc\objpash.inc"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="178"/>
+        <CursorPos X="23" Y="193"/>
+        <UsageCount Value="15"/>
         <Loaded Value="True"/>
-      </Unit29>
+      </Unit34>
+      <Unit35>
+        <Filename Value="C:\lazarus\fpc\3.0.2\source\packages\fcl-db\src\sqldb\sqldb.pp"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="2650"/>
+        <CursorPos X="3" Y="2652"/>
+        <UsageCount Value="13"/>
+        <Loaded Value="True"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="..\..\..\CDLookUp\uCDLookUp.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="986"/>
+        <CursorPos X="10" Y="897"/>
+        <UsageCount Value="10"/>
+      </Unit36>
     </Units>
     <OtherDefines Count="1">
       <Define0 Value="DEGUB"/>
     </OtherDefines>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="131" TopLine="116"/>
+        <Filename Value="demo.pas"/>
+        <Caret Line="114" TopLine="109"/>
       </Position1>
       <Position2>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="132" TopLine="116"/>
+        <Filename Value="demo.pas"/>
+        <Caret Line="115" TopLine="109"/>
       </Position2>
       <Position3>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="136" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="62" TopLine="57"/>
       </Position3>
       <Position4>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="137" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="63" TopLine="57"/>
       </Position4>
       <Position5>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="138" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="64" TopLine="57"/>
       </Position5>
       <Position6>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="128" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="70" TopLine="57"/>
       </Position6>
       <Position7>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="130" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="71" TopLine="57"/>
       </Position7>
       <Position8>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="131" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="72" TopLine="57"/>
       </Position8>
       <Position9>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="132" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="73" TopLine="57"/>
       </Position9>
       <Position10>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="136" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="75" TopLine="57"/>
       </Position10>
       <Position11>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="137" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="76" TopLine="57"/>
       </Position11>
       <Position12>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="138" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="77" TopLine="57"/>
       </Position12>
       <Position13>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="128" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="78" TopLine="58"/>
       </Position13>
       <Position14>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="130" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="79" TopLine="60"/>
       </Position14>
       <Position15>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="131" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="80" TopLine="61"/>
       </Position15>
       <Position16>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="132" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="83" TopLine="64"/>
       </Position16>
       <Position17>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="136" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="86" TopLine="67"/>
       </Position17>
       <Position18>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="137" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="87" TopLine="68"/>
       </Position18>
       <Position19>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="138" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="88" TopLine="69"/>
       </Position19>
       <Position20>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="128" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="89" TopLine="70"/>
       </Position20>
       <Position21>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="130" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="90" TopLine="71"/>
       </Position21>
       <Position22>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="131" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="91" TopLine="72"/>
       </Position22>
       <Position23>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="132" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="92" TopLine="73"/>
       </Position23>
       <Position24>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="136" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="93" TopLine="74"/>
       </Position24>
       <Position25>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="137" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="94" TopLine="75"/>
       </Position25>
       <Position26>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="138" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="95" TopLine="76"/>
       </Position26>
       <Position27>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="128" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="97" TopLine="78"/>
       </Position27>
       <Position28>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="130" TopLine="116"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="98" TopLine="79"/>
       </Position28>
       <Position29>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="128" TopLine="122"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="100" TopLine="81"/>
       </Position29>
       <Position30>
-        <Filename Value="..\..\src\DBJsonReader.pas"/>
-        <Caret Line="134" Column="30" TopLine="119"/>
+        <Filename Value="..\..\src\s7sconn.pas"/>
+        <Caret Line="107" TopLine="96"/>
       </Position30>
     </JumpHistory>
   </ProjectSession>
+  <Debugging>
+    <BreakPoints Count="4">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\..\src\s7sdbjsonreader.pas"/>
+        <Line Value="139"/>
+      </Item1>
+      <Item2>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\..\src\s7sdbjsonreader.pas"/>
+        <Line Value="118"/>
+      </Item2>
+      <Item3>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="demo.pas"/>
+        <Line Value="113"/>
+      </Item3>
+      <Item4>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\..\src\s7sconn.pas"/>
+        <Line Value="62"/>
+      </Item4>
+    </BreakPoints>
+  </Debugging>
 </CONFIG>

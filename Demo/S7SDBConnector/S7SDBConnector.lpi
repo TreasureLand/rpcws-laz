@@ -121,7 +121,7 @@
         <PackageName Value="LCL"/>
       </Item4>
     </RequiredPackages>
-    <Units Count="7">
+    <Units Count="10">
       <Unit0>
         <Filename Value="S7SDBConnector.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -156,6 +156,21 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="Helper.Stream"/>
       </Unit6>
+      <Unit7>
+        <Filename Value="..\..\src\s7sdbjsonreader.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="S7SDBJsonReader"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\src\s7sprovider.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="S7SProvider"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\src\helper.exceptions.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Helper.Exceptions"/>
+      </Unit9>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

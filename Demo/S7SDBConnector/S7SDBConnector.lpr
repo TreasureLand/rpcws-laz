@@ -7,7 +7,7 @@ uses
   cthreads,
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, rxnew, Demo
+  Forms, rxnew, Demo, S7SProvider, Helper.Exceptions
   { you can add units after this };
 
 {$R *.res}

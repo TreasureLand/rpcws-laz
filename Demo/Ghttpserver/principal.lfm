@@ -1,7 +1,7 @@
 object FrmPrincipal: TFrmPrincipal
-  Left = 586
+  Left = 644
   Height = 544
-  Top = 110
+  Top = 233
   Width = 474
   BorderIcons = [biSystemMenu, biMinimize]
   Caption = 'S7S Servidor de aplicação'
@@ -234,5 +234,11 @@ object FrmPrincipal: TFrmPrincipal
       Caption = 'Fechar'
       OnExecute = actFecharExecute
     end
+  end
+  object WSConnector1: TWSConnector
+    Connected = False
+    AutoCommit = False
+    left = 272
+    top = 136
   end
 end

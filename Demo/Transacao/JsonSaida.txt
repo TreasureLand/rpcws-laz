@@ -1,0 +1,56 @@
+{
+  "jsonrpc" : "2.0",
+  "method" : "Transaction",
+  "params" : [
+    "0",
+    {
+      "COMMANDS" : {
+        "COMMAND0" : {
+          "METHODTYPE" : "wsmtExecSQL",
+          "SQL" : "insert into TRANS#LineEnding#(nome,fantasia)#LineEnding#values#LineEnding#(:nome,:fantasia)",
+          "Pacotes" : "0",
+          "Posicao" : "0",
+          "QUERYBASE64" : "S",
+          "Params" : {
+            "nome" : "FERNANDO FERREIRA GOMES NASCIMENTO",
+            "fantasia" : "PASQUETO"
+          }
+        },
+        "COMMAND1" : {
+          "METHODTYPE" : "wsmtExecSQL",
+          "SQL" : "insert into TRANS#LineEnding#(nome,fantasia)#LineEnding#values#LineEnding#(:nome,:fantasia)",
+          "Pacotes" : "0",
+          "Posicao" : "0",
+          "QUERYBASE64" : "S",
+          "Params" : {
+            "nome" : "FERNANDO FERREIRA GOMES NASCIMENTO",
+            "fantasia" : "PASQUETO"
+          }
+        },
+        "COMMAND2" : {
+          "METHODTYPE" : "wsmtExecSQL",
+          "SQL" : "insert into TRANS#LineEnding#(nome,fantasia)#LineEnding#values#LineEnding#(:nome,:fantasia)",
+          "Pacotes" : "0",
+          "Posicao" : "0",
+          "QUERYBASE64" : "S",
+          "Params" : {
+            "nome" : "FERNANDO FERREIRA GOMES NASCIMENTO",
+            "fantasia" : "PASQUETO"
+          }
+        },
+        "COMMAND3" : {
+          "METHODTYPE" : "wsmtExecSQL",
+          "SQL" : "insert into TRANS#LineEnding#(nome,fantasia)#LineEnding#values#LineEnding#(:nome,:fantasia)",
+          "Pacotes" : "0",
+          "Posicao" : "0",
+          "QUERYBASE64" : "S",
+          "Params" : {
+            "nome" : "FERNANDO FERREIRA GOMES NASCIMENTO",
+            "fantasia" : "PASQUETO"
+          }
+        }
+      }
+    }
+  ],
+  "id" : 0
+}

@@ -7,8 +7,9 @@ unit rpcws;
 interface
 
 uses
-  WSConnector, WSBaseQuery, RUtils, DBJsonWriter, Helper.Stream, DBJsonReader, 
-  LazarusPackageIntf;
+  WSConnector, WSBaseQuery, Helper.Stream, jwsmessages, servermethods, 
+  s7sConn, S7SDBJsonReader, Helper.Exceptions, S7SProvider, S7SDBJsonWriter, 
+  jwsmethods, RGUtils, RUtils, LazarusPackageIntf;
 
 implementation
 

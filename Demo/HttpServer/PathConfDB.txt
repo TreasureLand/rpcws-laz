@@ -1,5 +1,5 @@
 IP=127.0.0.1
-PROTOCOLO=Firebird
-BASEDADOS=C:\Gold_Pro1.0\GOLD_PRO.FDB
-USUARIO=sysdba
-SENHA=masterkey
+PROTOCOLO=MySQL 5.5
+BASEDADOS=siscomlaz
+USUARIO=root
+SENHA=plus@123
