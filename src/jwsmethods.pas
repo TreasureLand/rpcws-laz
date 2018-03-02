@@ -12,7 +12,7 @@ unit jwsmethods;
 interface
 
 uses
-  Classes, SysUtils, jwstypes, fpjson, jsonparser, servermethods, jwsjson, db,
+  Classes, SysUtils, jwstypes, fpjson, jsonparser, servermethods, jwsjson,
   s7sconn, S7SProvider, RUtils, jwsconsts;
 
 type

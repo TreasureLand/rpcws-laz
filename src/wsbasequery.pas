@@ -1,4 +1,4 @@
-unit WSBaseQuery;
+unit wsbasequery;
 
 {$mode objfpc}{$H+}
 

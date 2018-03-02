@@ -6,7 +6,8 @@ object Form1: TForm1
   Caption = 'Form1'
   ClientHeight = 395
   ClientWidth = 602
-  LCLVersion = '1.6.4.0'
+  LCLVersion = '1.8.0.6'
+  Visible = False
   object Button1: TButton
     Left = 184
     Height = 25

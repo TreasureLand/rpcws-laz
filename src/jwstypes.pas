@@ -350,13 +350,15 @@ end;
 procedure addlog(amsg: string);
 var
   slfile: tstringlist;
+  Exename: String;
 begin
   slfile := tstringlist.create;
   try
-    if fileexists(paramstr(0) + 'log.txt') then
-      slfile.loadfromfile(paramstr(0) + 'log.txt');
+    Exename:= ExtractFileName(paramstr(0));
+    if fileexists(Exename + 'log.txt') then
+      slfile.loadfromfile(Exename + 'log.txt');
     slfile.add(datetimetostr(now) + #9 + amsg);
-    slfile.savetofile(paramstr(0) + 'log.txt');
+    slfile.savetofile(Exename + 'log.txt');
   finally
     freeandnil(slfile);
   end;

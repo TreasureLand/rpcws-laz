@@ -19,9 +19,9 @@
         <UnitName Value="WSConnector"/>
       </Item1>
       <Item2>
-        <Filename Value="..\src\WSBaseQuery.pas"/>
+        <Filename Value="..\src\wsbasequery.pas"/>
         <HasRegisterProc Value="True"/>
-        <UnitName Value="WSBaseQuery"/>
+        <UnitName Value="wsbasequery"/>
       </Item2>
       <Item3>
         <Filename Value="..\src\jwsclient.pas"/>
@@ -73,10 +73,13 @@
         <UnitName Value="RUtils"/>
       </Item14>
     </Files>
-    <RequiredPkgs Count="1">
+    <RequiredPkgs Count="2">
       <Item1>
         <PackageName Value="IDEIntf"/>
       </Item1>
+      <Item2>
+        <PackageName Value="FCL"/>
+      </Item2>
     </RequiredPkgs>
     <UsageOptions>
       <UnitPath Value="$(PkgOutDir)"/>

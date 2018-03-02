@@ -40,6 +40,7 @@ var
 begin
   o := TJSONObject.Create;
   try
+    ShortDateFormat:='dd/mm/yyyy';
     o.Add('data', Date);
     o.Add('hora', Time);
     Result := o.AsJSON;

@@ -49,7 +49,8 @@ object FrmPrincipal: TFrmPrincipal
   OnCreate = FormCreate
   OnWindowStateChange = FormWindowStateChange
   Position = poDesktopCenter
-  LCLVersion = '1.6.4.0'
+  LCLVersion = '1.8.0.6'
+  Visible = False
   object bIniciar: TSpeedButton
     Left = 8
     Height = 40

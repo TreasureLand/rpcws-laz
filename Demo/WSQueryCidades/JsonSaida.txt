@@ -1,8 +1,0 @@
-{
-  "jsonrpc" : "2.0",
-  "module" : "pessoas",
-  "method" : "HoraAtual",
-  "params" : [
-  ],
-  "id" : 0
-}

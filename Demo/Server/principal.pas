@@ -116,7 +116,7 @@ constructor TFPWebM.createnew(AOwner: TComponent; createmode: Integer);
 begin
   Inherited;
   CreateSession:= True;
-  FADDLogFile:= False;
+  FADDLogFile:= True;
   acao := TFpWebAction.create(actions);
   Acao.name:= 'acao';
   ActionMethods:= TFpWebAction.create(actions);

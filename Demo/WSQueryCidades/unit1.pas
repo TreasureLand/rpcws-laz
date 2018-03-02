@@ -37,12 +37,12 @@ var s: TJSONObject;
 begin
   Cliente:= TWSClientMethods.Create(Self);
   Cliente.Connector:= WSConnector1;
-  Cliente.MethodModule:='pessoas';
-  Cliente.MethodName:='HoraAtual';
+  Cliente.MethodModule:='funcoes';
+  Cliente.MethodName:='DataHoraAtual';
   s := Cliente.JSONCall([]);
-  try
-    //ShowMessage(s.AsJSON);
-    ShowMessage(DateTimeToStr(s.Floats['Data']+s.Floats['hora']));
+  try //ShowMessage(s.AsJSON);
+    ShortDateFormat:='dd/mm/yyyy';
+    ShowMessage(DateTimeToStr(s.Floats['data']+s.Floats['hora']));
   finally
     s.Free;
   end;
